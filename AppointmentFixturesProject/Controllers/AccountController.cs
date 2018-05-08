@@ -216,6 +216,10 @@ namespace AppointmentFixturesProject.Controllers
             return View();
         }
 
+
+
+
+
          [Authorize(Roles = "CompanyMaster")]
         [HttpPost]
         public async Task<ActionResult> RegisterVIP(BO.BOVIPTable model)
