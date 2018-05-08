@@ -1,0 +1,14 @@
+D:\Users\yogesh\documents\visual studio 2013\Projects\AppointmentFixturesProject\BLL\bin\Debug\BLL.dll.config
+D:\Users\yogesh\documents\visual studio 2013\Projects\AppointmentFixturesProject\BLL\bin\Debug\BLL.dll
+D:\Users\yogesh\documents\visual studio 2013\Projects\AppointmentFixturesProject\BLL\bin\Debug\BLL.pdb
+D:\Users\yogesh\documents\visual studio 2013\Projects\AppointmentFixturesProject\BLL\bin\Debug\BO.dll
+D:\Users\yogesh\documents\visual studio 2013\Projects\AppointmentFixturesProject\BLL\bin\Debug\DAL.dll
+D:\Users\yogesh\documents\visual studio 2013\Projects\AppointmentFixturesProject\BLL\bin\Debug\EntityFramework.dll
+D:\Users\yogesh\documents\visual studio 2013\Projects\AppointmentFixturesProject\BLL\bin\Debug\EntityFramework.SqlServer.dll
+D:\Users\yogesh\documents\visual studio 2013\Projects\AppointmentFixturesProject\BLL\bin\Debug\BO.pdb
+D:\Users\yogesh\documents\visual studio 2013\Projects\AppointmentFixturesProject\BLL\bin\Debug\DAL.pdb
+D:\Users\yogesh\documents\visual studio 2013\Projects\AppointmentFixturesProject\BLL\bin\Debug\EntityFramework.xml
+D:\Users\yogesh\documents\visual studio 2013\Projects\AppointmentFixturesProject\BLL\bin\Debug\EntityFramework.SqlServer.xml
+D:\Users\yogesh\documents\visual studio 2013\Projects\AppointmentFixturesProject\BLL\obj\Debug\BLL.csprojResolveAssemblyReference.cache
+D:\Users\yogesh\documents\visual studio 2013\Projects\AppointmentFixturesProject\BLL\obj\Debug\BLL.dll
+D:\Users\yogesh\documents\visual studio 2013\Projects\AppointmentFixturesProject\BLL\obj\Debug\BLL.pdb

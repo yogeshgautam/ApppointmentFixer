@@ -1,0 +1,9 @@
+D:\Users\yogesh\documents\visual studio 2013\Projects\AppointmentFixturesProject\BO\bin\Debug\BO.dll.config
+D:\Users\yogesh\documents\visual studio 2013\Projects\AppointmentFixturesProject\BO\bin\Debug\BO.dll
+D:\Users\yogesh\documents\visual studio 2013\Projects\AppointmentFixturesProject\BO\bin\Debug\BO.pdb
+D:\Users\yogesh\documents\visual studio 2013\Projects\AppointmentFixturesProject\BO\bin\Debug\EntityFramework.dll
+D:\Users\yogesh\documents\visual studio 2013\Projects\AppointmentFixturesProject\BO\bin\Debug\EntityFramework.SqlServer.dll
+D:\Users\yogesh\documents\visual studio 2013\Projects\AppointmentFixturesProject\BO\bin\Debug\EntityFramework.xml
+D:\Users\yogesh\documents\visual studio 2013\Projects\AppointmentFixturesProject\BO\bin\Debug\EntityFramework.SqlServer.xml
+D:\Users\yogesh\documents\visual studio 2013\Projects\AppointmentFixturesProject\BO\obj\Debug\BO.dll
+D:\Users\yogesh\documents\visual studio 2013\Projects\AppointmentFixturesProject\BO\obj\Debug\BO.pdb

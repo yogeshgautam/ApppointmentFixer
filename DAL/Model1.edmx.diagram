@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="20a008833b5c4d458f7426980c122a4f" Name="Diagram1">
+        <EntityTypeShape EntityType="AppointmentDatabaseModel.C__MigrationHistory" Width="1.5" PointX="0.75" PointY="7.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="AppointmentDatabaseModel.AspNetRole" Width="1.5" PointX="9.75" PointY="2.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="AppointmentDatabaseModel.AspNetUserClaim" Width="1.5" PointX="14.25" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="AppointmentDatabaseModel.AspNetUserLogin" Width="1.5" PointX="14.25" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="AppointmentDatabaseModel.AspNetUser" Width="1.5" PointX="12" PointY="1.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="AppointmentDatabaseModel.sysdiagram" Width="1.5" PointX="9.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="AppointmentDatabaseModel.tblAppointment" Width="1.5" PointX="5.25" PointY="2.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="AppointmentDatabaseModel.tblAvailableTiming" Width="1.5" PointX="7.5" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="AppointmentDatabaseModel.tblCompanyDetail" Width="1.5" PointX="0.75" PointY="3.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="AppointmentDatabaseModel.tblDateTime" Width="1.5" PointX="7.5" PointY="2.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="AppointmentDatabaseModel.tblDepartment" Width="1.5" PointX="3" PointY="2.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="AppointmentDatabaseModel.tblUser" Width="1.5" PointX="9.75" PointY="9.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="AppointmentDatabaseModel.tblVIPUser" Width="1.5" PointX="5.25" PointY="5.875" IsExpanded="true" />
+        <AssociationConnector Association="AppointmentDatabaseModel.FK_dbo_AspNetUserClaims_dbo_AspNetUsers_UserId" ManuallyRouted="false" />
+        <AssociationConnector Association="AppointmentDatabaseModel.FK_dbo_AspNetUserLogins_dbo_AspNetUsers_UserId" ManuallyRouted="false" />
+        <AssociationConnector Association="AppointmentDatabaseModel.FK_tblAppointment_tblDateTime" ManuallyRouted="false" />
+        <AssociationConnector Association="AppointmentDatabaseModel.FK_tblAppointment_tblDepartment" ManuallyRouted="false" />
+        <AssociationConnector Association="AppointmentDatabaseModel.FK_tblDateTime_tblAppointment" ManuallyRouted="false" />
+        <AssociationConnector Association="AppointmentDatabaseModel.FK_tblAvailableTiming_tblVIPUser" ManuallyRouted="false" />
+        <AssociationConnector Association="AppointmentDatabaseModel.FK_tblDepartment_tblCompanyDetails" ManuallyRouted="false" />
+        <AssociationConnector Association="AppointmentDatabaseModel.FK_tblVIPUser_tblDepartment" ManuallyRouted="false" />
+        <AssociationConnector Association="AppointmentDatabaseModel.AspNetUserRoles" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
