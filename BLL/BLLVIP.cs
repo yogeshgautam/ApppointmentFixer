@@ -16,14 +16,18 @@ namespace BLL
         public int CreateVIP(BOVIPTable model)
         {
             tblVIPUser vip = new tblVIPUser();
+            vip.Address1 = model.Address1;
+            vip.Address2 = model.Address2;
+            vip.CreatedAt = DateTime.Now.ToString();
             vip.DepartmentId = model.DepartmentId;
+            
             vip.Designation = model.Designation;
-            vip.UserId = model.UserId;
-            vip.Contact = model.Contact;
-            vip.Email = model.Email;
-            vip.Address = model.Address;
             vip.Details = model.Details;
+            vip.Email = model.Email;
+            vip.FullName = model.FullName;
             vip.IsDeleted = false;
+            vip.Phone = model.Phone;
+            vip.Photo = model.Photo;
             _db.tblVIPUsers.Add(vip);
             return _db.SaveChanges();            
         }
@@ -31,12 +35,16 @@ namespace BLL
         public int UpdateVIP(BOVIPTable model)
         {
             tblVIPUser vip = _db.tblVIPUsers.Where(u => u.Id == model.Id).FirstOrDefault();
-            vip.DepartmentId = model.DepartmentId;
+            vip.Address1 = model.Address1;
+            vip.Address2 = model.Address2;
+            vip.LastUpdated = DateTime.Now.ToString();
+            //vip.DepartmentId = model.DepartmentId;
             vip.Designation = model.Designation;
-            vip.Contact = model.Contact;
-            vip.Email = model.Email;
-            vip.Address = model.Address;
             vip.Details = model.Details;
+            vip.Email = model.Email;
+            vip.FullName = model.FullName;
+            vip.Phone = model.Phone;
+            vip.Photo = model.Photo;
           //  vip.UserId = model.UserId;
             return _db.SaveChanges();
         }
@@ -49,15 +57,18 @@ namespace BLL
             {
                 BOVIPTable vip = new BOVIPTable();
                 vip.Id = model.Id;
-                vip.lstDepartment = bldepartment.GetDepartmentById(model.DepartmentId.Value);
+                vip.Address1 = model.Address1;
+                vip.Address2 = model.Address2;
+                vip.LastUpdated = DateTime.Now.ToString();
                 vip.DepartmentId = model.DepartmentId;
+                vip.lstDepartment = bldepartment.GetDepartmentById(model.DepartmentId.Value);
                 vip.Designation = model.Designation;
-                vip.UserId = model.UserId;
-                vip.Contact = model.Contact;
-                vip.Email = model.Email;
-                vip.Address = model.Address;
                 vip.Details = model.Details;
-                vip.Id = model.Id;
+                vip.Email = model.Email;
+                vip.FullName = model.FullName;
+                vip.Phone = model.Phone;
+                vip.Photo = model.Photo;
+                vip.UserId = model.UserId;
                 lst.Add(vip);
             }
             return lst;
@@ -68,14 +79,17 @@ namespace BLL
             tblVIPUser model = _db.tblVIPUsers.Where(u => u.Id == id&&u.IsDeleted==false).FirstOrDefault();
             BOVIPTable vip = new BOVIPTable();
             vip.Id = model.Id;
+            vip.Address1 = model.Address1;
+            vip.Address2 = model.Address2;
             vip.DepartmentId = model.DepartmentId;
             vip.lstDepartment = bldepartment.GetDepartmentById(model.DepartmentId.Value);
             vip.Designation = model.Designation;
-            vip.UserId = model.UserId;
-            vip.Contact = model.Contact;
-            vip.Email = model.Email;
-            vip.Address = model.Address;
             vip.Details = model.Details;
+            vip.Email = model.Email;
+            vip.FullName = model.FullName;
+            vip.Phone = model.Phone;
+            vip.Photo = model.Photo;
+            vip.UserId = model.UserId;
             return vip;
         }
 

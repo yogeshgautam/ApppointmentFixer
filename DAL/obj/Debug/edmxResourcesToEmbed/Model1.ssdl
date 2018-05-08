@@ -99,10 +99,15 @@
     </Key>
     <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="Name" Type="nvarchar(max)" />
-    <Property Name="Location" Type="nvarchar(max)" />
-    <Property Name="Contact" Type="nvarchar" MaxLength="50" />
+    <Property Name="Address" Type="nvarchar(max)" />
+    <Property Name="Photo" Type="nvarchar" MaxLength="50" />
     <Property Name="UserId" Type="nvarchar(max)" />
     <Property Name="IsDeleted" Type="bit" />
+    <Property Name="Email" Type="nvarchar" MaxLength="50" />
+    <Property Name="Description" Type="nvarchar(max)" />
+    <Property Name="Phone" Type="nvarchar" MaxLength="50" />
+    <Property Name="CreatedAt" Type="nvarchar" MaxLength="50" />
+    <Property Name="LastUpdated" Type="nvarchar" MaxLength="50" />
   </EntityType>
   <EntityType Name="tblDateTime">
     <Key>
@@ -122,11 +127,13 @@
     <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="CompanyId" Type="int" />
     <Property Name="Name" Type="nvarchar(max)" />
-    <Property Name="Contact" Type="nvarchar(max)" />
+    <Property Name="phone" Type="nvarchar(max)" />
     <Property Name="Email" Type="nvarchar(max)" />
     <Property Name="Details" Type="nvarchar(max)" />
     <Property Name="HOD" Type="nvarchar" MaxLength="50" />
     <Property Name="IsDeleted" Type="bit" />
+    <Property Name="CreatedAt" Type="nvarchar" MaxLength="50" />
+    <Property Name="LastUpdated" Type="nvarchar" MaxLength="50" />
   </EntityType>
   <EntityType Name="tblUser">
     <Key>
@@ -145,11 +152,16 @@
     <Property Name="DepartmentId" Type="int" />
     <Property Name="UserId" Type="nvarchar(max)" />
     <Property Name="Designation" Type="nvarchar(max)" />
-    <Property Name="Contact" Type="nvarchar" MaxLength="50" />
+    <Property Name="Phone" Type="nvarchar" MaxLength="50" />
     <Property Name="Email" Type="nvarchar" MaxLength="50" />
-    <Property Name="Address" Type="nvarchar" MaxLength="50" />
-    <Property Name="Details" Type="nvarchar(max)" />
+    <Property Name="Address1" Type="nvarchar" MaxLength="50" />
+    <Property Name="Address2" Type="nvarchar" MaxLength="50" />
     <Property Name="IsDeleted" Type="bit" />
+    <Property Name="Details" Type="nvarchar(max)" />
+    <Property Name="FullName" Type="nvarchar" MaxLength="50" />
+    <Property Name="Photo" Type="nvarchar(max)" />
+    <Property Name="CreatedAt" Type="nvarchar" MaxLength="50" />
+    <Property Name="LastUpdated" Type="nvarchar" MaxLength="50" />
   </EntityType>
   <Association Name="FK_dbo_AspNetUserClaims_dbo_AspNetUsers_UserId">
     <End Role="AspNetUsers" Type="Self.AspNetUsers" Multiplicity="1">

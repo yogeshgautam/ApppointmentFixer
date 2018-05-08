@@ -16,10 +16,11 @@ namespace BLL
         {
             tblDepartment department = new tblDepartment();
             department.CompanyId = model.CompanyId;
-            department.Contact = model.Contact;
+            department.phone = model.phone;
             department.Email = model.Email;
             department.IsDeleted = false;
             department.Name = model.Name;
+            department.HOD = model.HOD;
             _db.tblDepartments.Add(department);
             return _db.SaveChanges();
         }
@@ -27,9 +28,10 @@ namespace BLL
         public int UpdateDepartment(BODepartment model)
         {
             tblDepartment department = _db.tblDepartments.Where(u => u.Id == model.Id).FirstOrDefault();
-            department.Contact = model.Contact;
+            department.phone = model.phone;
             department.Email = model.Email;
             department.Name = model.Name;
+            department.HOD = model.HOD;
             return _db.SaveChanges();
         }
 
@@ -42,10 +44,11 @@ namespace BLL
                 BODepartment department = new BODepartment();
                 department.CompanyId = model.CompanyId;
                 department.lstCompany = blcompany.GetCompanyById(model.CompanyId.Value);
-                department.Contact = model.Contact;
+                department.phone = model.phone;
                 department.Email = model.Email;
                 department.Id = model.Id;
                 department.Name = model.Name;
+                department.HOD = model.HOD;
                 lst.Add(department);
             }
             return lst;
@@ -57,10 +60,11 @@ namespace BLL
             BODepartment department = new BODepartment();
             department.CompanyId = model.CompanyId;
             department.lstCompany = blcompany.GetCompanyById(model.CompanyId.Value);
-            department.Contact = model.Contact;
+            department.phone = model.phone;
             department.Email = model.Email;
             department.Id = model.Id;
             department.Name = model.Name;
+            department.HOD = model.HOD;
             return department;
         }
 

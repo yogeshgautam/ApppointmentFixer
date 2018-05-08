@@ -15,10 +15,14 @@ namespace BLL
         {
             tblCompanyDetail company = new tblCompanyDetail();
             company.Name = model.Name;
-            company.Contact = model.Contact;
-            company.Location = model.Location;
+            company.Phone = model.Phone;
+            company.Address = model.Address;
             company.UserId = model.UserId;
             company.IsDeleted = false;
+            company.Photo = model.Photo;
+            company.Email = model.Email;
+            company.Description = model.Description;
+            company.CreatedAt = DateTime.Now.ToString();
             _db.tblCompanyDetails.Add(company);
             return _db.SaveChanges();
         }
@@ -27,8 +31,11 @@ namespace BLL
         {
             tblCompanyDetail company = _db.tblCompanyDetails.Where(u => u.Id == model.Id).FirstOrDefault();
             company.Name = model.Name;
-            company.Contact = model.Contact;
-            company.Location = model.Location;
+            company.Phone = model.Phone;
+            company.Address = model.Address;
+            company.Photo = model.Photo;
+            company.Email = model.Email;
+            company.Description = model.Description;
             return _db.SaveChanges();
         }
 
@@ -40,11 +47,13 @@ namespace BLL
             {
                 BOCompany company = new BOCompany();
                 company.Name = model.Name;
+                company.Phone = model.Phone;
+                company.Address = model.Address;
                 company.Id = model.Id;
                 company.UserId = model.UserId;
-                
-                company.Contact = model.Contact;
-                company.Location = model.Location;
+                company.Photo = model.Photo;
+                company.Email = model.Email;
+                company.Description = model.Description;
                 lst.Add(company);
             }
             return lst;
@@ -63,9 +72,12 @@ namespace BLL
             tblCompanyDetail model = _db.tblCompanyDetails.Where(u => u.Id == id).FirstOrDefault();
             BOCompany company = new BOCompany();
             company.Name = model.Name;
-            company.Id = model.Id;
-            company.Contact = model.Contact;
-            company.Location = model.Location;
+            company.Phone = model.Phone;
+            company.Address = model.Address;
+            company.UserId = model.UserId;
+            company.Photo = model.Photo;
+            company.Email = model.Email;
+            company.Description = model.Description;
             return company;
         }
     }
