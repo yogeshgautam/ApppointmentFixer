@@ -7,6 +7,7 @@ using BO;
 using BLL;
 using Microsoft.AspNet.Identity;
 using System.Web.Security;
+using System.Net;
 
 //
 
@@ -153,7 +154,7 @@ namespace AppointmentFixturesProject.Controllers
         {
             bllvip.UpdateVIP(model);
             ViewBag.Department = bllDepartment.GetAllDepartment();
-            return View();
+            return RedirectToAction("VIP");
         }
 
         public ActionResult DetailsVIP(int id)
@@ -186,7 +187,7 @@ namespace AppointmentFixturesProject.Controllers
          public ActionResult DeleteDepartment(BODepartment model)
          {
              bllDepartment.DeleteDepartment(model.Id);
-             return View(model);
+             return RedirectToAction("Index");
          }
 
          public ActionResult DetailsDepartment(int id)

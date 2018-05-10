@@ -19,7 +19,9 @@ namespace BLL
             company.Address = model.Address;
             company.UserId = model.UserId;
             company.IsDeleted = false;
+         
             company.Photo = model.Photo;
+         
             company.Email = model.Email;
             company.Description = model.Description;
             company.CreatedAt = DateTime.Now.ToString();

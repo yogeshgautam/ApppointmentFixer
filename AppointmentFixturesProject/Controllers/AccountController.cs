@@ -518,7 +518,7 @@ namespace AppointmentFixturesProject.Controllers
         public ActionResult LogOff()
         {
             AuthenticationManager.SignOut(DefaultAuthenticationTypes.ApplicationCookie);
-            Session.Abandon();//added by me
+            //added by me
             return RedirectToAction("Index", "Home");
         }
 
