@@ -18,8 +18,10 @@ namespace BLL
             department.CompanyId = model.CompanyId;
             department.phone = model.phone;
             department.Email = model.Email;
+            department.Details = model.Details;
             department.IsDeleted = false;
             department.Name = model.Name;
+            department.CreatedAt = DateTime.Now.ToString();
             department.HOD = model.HOD;
             _db.tblDepartments.Add(department);
             return _db.SaveChanges();
@@ -30,7 +32,9 @@ namespace BLL
             tblDepartment department = _db.tblDepartments.Where(u => u.Id == model.Id).FirstOrDefault();
             department.phone = model.phone;
             department.Email = model.Email;
+            department.Details = model.Details;
             department.Name = model.Name;
+            department.LastUpdated = DateTime.Now.ToString();
             department.HOD = model.HOD;
             return _db.SaveChanges();
         }
@@ -46,6 +50,7 @@ namespace BLL
                 department.lstCompany = blcompany.GetCompanyById(model.CompanyId.Value);
                 department.phone = model.phone;
                 department.Email = model.Email;
+                department.Details = model.Details;
                 department.Id = model.Id;
                 department.Name = model.Name;
                 department.HOD = model.HOD;
@@ -61,6 +66,7 @@ namespace BLL
             department.CompanyId = model.CompanyId;
             department.lstCompany = blcompany.GetCompanyById(model.CompanyId.Value);
             department.phone = model.phone;
+            department.Details = model.Details;
             department.Email = model.Email;
             department.Id = model.Id;
             department.Name = model.Name;

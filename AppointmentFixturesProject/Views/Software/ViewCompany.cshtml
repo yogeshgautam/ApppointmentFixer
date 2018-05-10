@@ -42,7 +42,7 @@
 
                     <td>
                         @Html.ActionLink("Edit", "EditCompany", new { id = item.Id }, new { @class = "btn btn-warning" })
-
+                        @Html.ActionLink("Details", "DetailsCompany", new { id = item.Id }, new { @class = "btn btn-info" })
                         @Html.ActionLink("Delete", "DeleteCOmpany", new { id = item.Id }, new { @class = "btn btn-danger" })
                     </td>
                 </tr>

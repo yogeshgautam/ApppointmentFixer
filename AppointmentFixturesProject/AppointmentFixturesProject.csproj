@@ -340,9 +340,14 @@
     <Content Include="Views\Company\_CompanyNamePartial.cshtml" />
     <Content Include="Views\Company\EditDepartment.cshtml" />
     <Content Include="Views\Company\DeleteDepartment.cshtml" />
+    <Content Include="Views\Software\DetailsCompany.cshtml" />
+    <Content Include="Views\Company\DetailsDepartment.cshtml" />
+    <Content Include="Views\Company\ScheduleVip.cshtml" />
+    <Content Include="Views\Company\DetailsVIP.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Images\" />
     <Folder Include="tempClass\" />
     <Folder Include="Views\MyAccount\" />
   </ItemGroup>

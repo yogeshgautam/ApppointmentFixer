@@ -61,6 +61,19 @@ namespace AppointmentFixturesProject.Controllers
              blcompany.DeleteCompany(model.Id);
              return RedirectToAction("ViewCOmpany");
          }
+
+         public ActionResult DetailsCompany(int id)
+         {
+             BOCompany company = blcompany.GetCompanyById(id);
+             return View(company);
+         }
+
+         [HttpPost]
+         public ActionResult DetailsCompany(BOCompany model)
+         {
+
+             return View();
+         }
     
     }
 }
