@@ -20,7 +20,7 @@ namespace BLL
             vip.Address2 = model.Address2;
             vip.CreatedAt = DateTime.Now.ToString();
             vip.DepartmentId = model.DepartmentId;
-            
+            vip.UserId = model.UserId;
             vip.Designation = model.Designation;
             vip.Details = model.Details;
             vip.Email = model.Email;

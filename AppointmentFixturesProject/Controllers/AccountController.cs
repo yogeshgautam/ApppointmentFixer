@@ -273,7 +273,16 @@ namespace AppointmentFixturesProject.Controllers
                   //  await SignInManager.SignInAsync(user, isPersistent: false, rememberBrowser: false);
 
                     //creating VIP
+                    string filename = "";
+                    HttpPostedFileBase fup = Request.Files[0];
+                    if (fup != null)
+                    {
+                        filename = fup.FileName;
+                        fup.SaveAs(Server.MapPath("~/Images/" + fup.FileName));
+
+                    }
                     BLL.BLLCompany vlcompany = new BLL.BLLCompany();
+                    model.Photo = filename;
                     model.UserId = user.Id;
 
                     vlcompany.CreateCompany(model);
@@ -509,7 +518,7 @@ namespace AppointmentFixturesProject.Controllers
         public ActionResult LogOff()
         {
             AuthenticationManager.SignOut(DefaultAuthenticationTypes.ApplicationCookie);
-            Session.Abandon();//added by me
+            //added by me
             return RedirectToAction("Index", "Home");
         }
 

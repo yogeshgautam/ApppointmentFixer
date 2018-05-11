@@ -22,5 +22,10 @@ namespace BO
 
         public string password { get; set; }
         public string ConfirmPassword { get; set; }
+
+        public BOCompany()
+        {
+            Photo = "default.png";
+        }
     }
 }

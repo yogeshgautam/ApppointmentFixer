@@ -7,6 +7,7 @@ using BO;
 using BLL;
 using Microsoft.AspNet.Identity;
 using System.Web.Security;
+using System.Net;
 
 //
 
@@ -24,6 +25,7 @@ namespace AppointmentFixturesProject.Controllers
          BLLCompany bllCompany=new BLLCompany();
         BLLVIP bllvip = new BLLVIP();
         BLLUser bluser = new BLLUser();
+        BLLAvailableTiming blavailable = new BLLAvailableTiming();
 
          public static int companyId=1;
          public static string companyName = "";
@@ -142,8 +144,9 @@ namespace AppointmentFixturesProject.Controllers
 
         public ActionResult EditVIP(int id)
         {
+            BOVIPTable vip = bllvip.GetVIPById(id);
             ViewBag.Department = bllDepartment.GetAllDepartment();
-            return View();
+            return View(vip);
         }
 
         [HttpPost]
@@ -151,9 +154,14 @@ namespace AppointmentFixturesProject.Controllers
         {
             bllvip.UpdateVIP(model);
             ViewBag.Department = bllDepartment.GetAllDepartment();
-            return View();
+            return RedirectToAction("VIP");
         }
 
+        public ActionResult DetailsVIP(int id)
+        {
+            BOVIPTable vip= bllvip.GetVIPById(id);
+            return View(vip);
+        }
 
          //for departments 
         public ActionResult EditDepartment(int id )
@@ -179,7 +187,20 @@ namespace AppointmentFixturesProject.Controllers
          public ActionResult DeleteDepartment(BODepartment model)
          {
              bllDepartment.DeleteDepartment(model.Id);
+             return RedirectToAction("Index");
+         }
+
+         public ActionResult DetailsDepartment(int id)
+         {
+             BODepartment model = bllDepartment.GetDepartmentById(id);
              return View(model);
+         }
+
+         public ActionResult ScheduleVip(int id)
+         {
+             List<BOAvailableTiming> lst = blavailable.GetAvailableTimingByVIP(id);
+             return View(lst);
+             
          }
     }
 }

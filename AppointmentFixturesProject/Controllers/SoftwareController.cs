@@ -13,6 +13,14 @@ namespace AppointmentFixturesProject.Controllers
     public class SoftwareController : Controller
     {
         BLLCompany blcompany = new BLLCompany();
+
+
+        public SoftwareController()
+        {
+
+        }
+
+
         // GET: Software
         public ActionResult Index()
         {
@@ -39,6 +47,7 @@ namespace AppointmentFixturesProject.Controllers
         public ActionResult EditCompany(int id)
         {
             BOCompany company = blcompany.GetCompanyById(id);
+            if (company.Photo == null) { company.Photo = "default.png"; }
             return View(company);
         }
 
@@ -60,6 +69,19 @@ namespace AppointmentFixturesProject.Controllers
          {
              blcompany.DeleteCompany(model.Id);
              return RedirectToAction("ViewCOmpany");
+         }
+
+         public ActionResult DetailsCompany(int id)
+         {
+             BOCompany company = blcompany.GetCompanyById(id);
+             return View(company);
+         }
+
+         [HttpPost]
+         public ActionResult DetailsCompany(BOCompany model)
+         {
+
+             return View();
          }
     
     }
