@@ -71,5 +71,9 @@ namespace AppointmentFixturesProject.Controllers
             blavailable.DeleteAvailableTimings(id);
             return RedirectToAction("ViewAppointment");
         }
+
+       
+
+     
     }
 }
