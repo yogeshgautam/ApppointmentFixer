@@ -202,5 +202,13 @@ namespace AppointmentFixturesProject.Controllers
              return View(lst);
              
          }
+
+        //Notification Message
+        BLLAppointmentDetails bllappointmentdetails = new BLLAppointmentDetails();
+        [HttpGet]
+        public JsonResult GetNotifications()
+        {
+            return Json(bllappointmentdetails.GetAllAppointment(), JsonRequestBehavior.AllowGet);
+        }
     }
 }
