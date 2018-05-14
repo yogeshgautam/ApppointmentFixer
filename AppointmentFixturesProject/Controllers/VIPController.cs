@@ -136,9 +136,7 @@ namespace AppointmentFixturesProject.Controllers
             }
             
         }
-
-       
-        
+        //conformed
     }
 
 
