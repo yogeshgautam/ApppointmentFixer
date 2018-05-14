@@ -10,6 +10,7 @@ namespace BO
     public class BOAvailableTiming
     {
         public int Id { get; set; }
+<<<<<<< HEAD
 
         [Required]
         public Nullable<System.DateTime> Date { get; set; }
@@ -17,6 +18,12 @@ namespace BO
         [Required]
         public Nullable<System.TimeSpan> StartTime { get; set; }
 
+=======
+        [Required]
+        public Nullable<System.DateTime> Date { get; set; }
+        [Required]
+        public Nullable<System.TimeSpan> StartTime { get; set; }
+>>>>>>> 7a8f3efc2ebed94cabd5cd1e061e876d2a8edce6
         [Required]
         public Nullable<System.TimeSpan> EndTime { get; set; }
 

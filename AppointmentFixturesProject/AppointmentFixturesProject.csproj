@@ -325,7 +325,6 @@
     <Content Include="Views\Company\VIP.cshtml" />
     <Content Include="Views\Company\DeleteVIP.cshtml" />
     <Content Include="Views\Company\EditVIP.cshtml" />
-    <Content Include="Views\Shared\_VIPSharedView.cshtml" />
     <Content Include="Views\VIP\Index.cshtml" />
     <Content Include="Views\VIP\FixAppointment.cshtml" />
     <Content Include="Views\VIP\ViewAppointment.cshtml" />
@@ -349,6 +348,7 @@
     <Content Include="Views\Company\ScheduleVip.cshtml" />
     <Content Include="Views\Company\DetailsVIP.cshtml" />
     <Content Include="Views\Shared\_VipLayout.cshtml" />
+    <Content Include="Views\Shared\_CompanyLayout.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
