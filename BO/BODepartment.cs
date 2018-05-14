@@ -14,11 +14,11 @@ namespace BO
         [Required]
         public Nullable<int> CompanyId { get; set; }
 
-<<<<<<< HEAD
+
          [Required]
-=======
+
         [Required]
->>>>>>> 7a8f3efc2ebed94cabd5cd1e061e876d2a8edce6
+
         public string Name { get; set; }
 
         [Required]

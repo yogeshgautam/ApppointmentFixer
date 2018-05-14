@@ -75,6 +75,7 @@ namespace AppointmentFixturesProject.Controllers
         {
             if (ModelState.IsValid)
             {
+                
                 model.CompanyId = companyId;
                 if (bllDepartment.CreateDepartment(model) == 1)
                 {
@@ -210,13 +211,5 @@ namespace AppointmentFixturesProject.Controllers
              return View(lst);
              
          }
-
-        //Notification Message
-        BLLAppointmentDetails bllappointmentdetails = new BLLAppointmentDetails();
-        [HttpGet]
-        public JsonResult GetNotifications()
-        {
-            return Json(bllappointmentdetails.GetAllAppointment(), JsonRequestBehavior.AllowGet);
-        }
     }
 }
