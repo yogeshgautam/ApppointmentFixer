@@ -8,3 +8,14 @@ D:\Users\yogesh\documents\visual studio 2013\Projects\AppointmentFixturesProject
 D:\Users\yogesh\documents\visual studio 2013\Projects\AppointmentFixturesProject\BO\obj\Debug\BO.csprojResolveAssemblyReference.cache
 D:\Users\yogesh\documents\visual studio 2013\Projects\AppointmentFixturesProject\BO\obj\Debug\BO.dll
 D:\Users\yogesh\documents\visual studio 2013\Projects\AppointmentFixturesProject\BO\obj\Debug\BO.pdb
+C:\Users\Manish\Desktop\ApppointmentFixer\BO\bin\Debug\BO.dll.config
+C:\Users\Manish\Desktop\ApppointmentFixer\BO\bin\Debug\BO.dll
+C:\Users\Manish\Desktop\ApppointmentFixer\BO\bin\Debug\BO.pdb
+C:\Users\Manish\Desktop\ApppointmentFixer\BO\bin\Debug\EntityFramework.dll
+C:\Users\Manish\Desktop\ApppointmentFixer\BO\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Manish\Desktop\ApppointmentFixer\BO\bin\Debug\EntityFramework.xml
+C:\Users\Manish\Desktop\ApppointmentFixer\BO\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Manish\Desktop\ApppointmentFixer\BO\obj\Debug\BO.csprojResolveAssemblyReference.cache
+C:\Users\Manish\Desktop\ApppointmentFixer\BO\obj\Debug\BO.csproj.CoreCompileInputs.cache
+C:\Users\Manish\Desktop\ApppointmentFixer\BO\obj\Debug\BO.dll
+C:\Users\Manish\Desktop\ApppointmentFixer\BO\obj\Debug\BO.pdb
