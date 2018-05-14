@@ -8,3 +8,13 @@ D:\Users\yogesh\documents\visual studio 2013\Projects\AppointmentFixturesProject
 D:\Users\yogesh\documents\visual studio 2013\Projects\AppointmentFixturesProject\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
 D:\Users\yogesh\documents\visual studio 2013\Projects\AppointmentFixturesProject\DAL\obj\Debug\DAL.dll
 D:\Users\yogesh\documents\visual studio 2013\Projects\AppointmentFixturesProject\DAL\obj\Debug\DAL.pdb
+J:\M\Final Appointment Project\FInal Appointment Proooojet\ApppointmentFixer\DAL\bin\Debug\DAL.dll.config
+J:\M\Final Appointment Project\FInal Appointment Proooojet\ApppointmentFixer\DAL\bin\Debug\DAL.dll
+J:\M\Final Appointment Project\FInal Appointment Proooojet\ApppointmentFixer\DAL\bin\Debug\DAL.pdb
+J:\M\Final Appointment Project\FInal Appointment Proooojet\ApppointmentFixer\DAL\bin\Debug\EntityFramework.dll
+J:\M\Final Appointment Project\FInal Appointment Proooojet\ApppointmentFixer\DAL\bin\Debug\EntityFramework.SqlServer.dll
+J:\M\Final Appointment Project\FInal Appointment Proooojet\ApppointmentFixer\DAL\bin\Debug\EntityFramework.xml
+J:\M\Final Appointment Project\FInal Appointment Proooojet\ApppointmentFixer\DAL\bin\Debug\EntityFramework.SqlServer.xml
+J:\M\Final Appointment Project\FInal Appointment Proooojet\ApppointmentFixer\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+J:\M\Final Appointment Project\FInal Appointment Proooojet\ApppointmentFixer\DAL\obj\Debug\DAL.dll
+J:\M\Final Appointment Project\FInal Appointment Proooojet\ApppointmentFixer\DAL\obj\Debug\DAL.pdb
