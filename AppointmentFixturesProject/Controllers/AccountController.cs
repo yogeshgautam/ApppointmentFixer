@@ -286,8 +286,8 @@ namespace AppointmentFixturesProject.Controllers
                     HttpPostedFileBase fup = Request.Files[0];
                     if (fup != null)
                     {
-                        filename = fup.FileName;
-                        fup.SaveAs(Server.MapPath("~/Images/" + fup.FileName));
+                        filename = Guid.NewGuid() + fup.FileName;
+                        fup.SaveAs(Server.MapPath("~/Images/" + (Guid.NewGuid()+fup.FileName)));
 
                     }
                     BLL.BLLCompany vlcompany = new BLL.BLLCompany();
