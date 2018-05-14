@@ -34,5 +34,6 @@ namespace BO
 
         [Required]
         public string Details { get; set; }
+        public string status { get; set; }
     }
 }

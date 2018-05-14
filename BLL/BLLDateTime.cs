@@ -15,20 +15,18 @@ namespace BLL
         public int CreateDateTime(BODateTime model)
         {
             tblDateTime datetime = new tblDateTime();
-            datetime.AppointmentId = model.AppointmentId;
             datetime.Date=model.Date;
             datetime.FromTime=model.FromTime;
             datetime.ToTime=model.ToTime;
             datetime.IsCanceled=model.IsCanceled;
             _db.tblDateTimes.Add(datetime);
             return _db.SaveChanges();
-
         }
 
         public int UpdateDateTime(BODateTime model)
         {
             tblDateTime datetime = _db.tblDateTimes.Where(u => u.Id == model.Id).FirstOrDefault();
-            datetime.AppointmentId = model.AppointmentId;
+            datetime.Id = model.Id;
             datetime.Date=model.Date;
             datetime.FromTime=model.FromTime;
             datetime.ToTime=model.ToTime;
@@ -43,8 +41,8 @@ namespace BLL
             foreach (var model in temp)
             {
                 BODateTime datetime = new BODateTime();
-                datetime.AppointmentId = model.AppointmentId;
                 datetime.Date = model.Date;
+                datetime.Id = model.Id;
                 datetime.FromTime = model.FromTime;
                 datetime.ToTime = model.ToTime;
                 datetime.IsCanceled = model.IsCanceled;
@@ -59,5 +57,12 @@ namespace BLL
             _db.tblDateTimes.Remove(datetime);
             return _db.SaveChanges();
         }
+
+        public int GetLastId()
+        {
+           return _db.tblDateTimes.Max(u => u.Id);
+        }
+
+       
     }
 }
