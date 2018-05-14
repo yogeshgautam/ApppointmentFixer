@@ -188,6 +188,7 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="Images\appointment.jpg" />
     <Content Include="Others\css\animate.css" />
     <Content Include="Others\css\bootstrap.min.css" />
     <Content Include="Others\css\font-awesome.min.css" />
@@ -351,7 +352,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Images\" />
     <Folder Include="tempClass\" />
     <Folder Include="Views\MyAccount\" />
   </ItemGroup>
