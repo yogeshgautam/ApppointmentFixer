@@ -14,5 +14,6 @@ namespace BO
         public string AppointmentTo { get; set; }
         public Nullable<int> DateTimeId { get; set; }
         public string Details { get; set; }
+        public string status { get; set; }
     }
 }

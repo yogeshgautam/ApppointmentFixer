@@ -9,10 +9,10 @@ namespace BO
     public class BODateTime
     {
         public int Id { get; set; }
-        public Nullable<int> AppointmentId { get; set; }
+
         public Nullable<System.DateTime> Date { get; set; }
-        public Nullable<System.TimeSpan> FromTime { get; set; }
-        public Nullable<System.TimeSpan> ToTime { get; set; }
-        public Nullable<bool> IsCanceled { get; set; }
+        public string FromTime { get; set; }
+        public string ToTime { get; set; }
+        public bool? IsCanceled { get; set; }
     }
 }

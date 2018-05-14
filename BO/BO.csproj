@@ -56,6 +56,7 @@
     <Compile Include="BORole.cs" />
     <Compile Include="BOUsers.cs" />
     <Compile Include="BOVIPTable.cs" />
+    <Compile Include="BOVipViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

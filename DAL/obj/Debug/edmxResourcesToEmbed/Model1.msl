@@ -76,6 +76,7 @@
           <ScalarProperty Name="AppointmentTo" ColumnName="AppointmentTo" />
           <ScalarProperty Name="DateTimeId" ColumnName="DateTimeId" />
           <ScalarProperty Name="Details" ColumnName="Details" />
+          <ScalarProperty Name="status" ColumnName="status" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
@@ -112,7 +113,6 @@
       <EntityTypeMapping TypeName="AppointmentDatabaseModel.tblDateTime">
         <MappingFragment StoreEntitySet="tblDateTime">
           <ScalarProperty Name="Id" ColumnName="Id" />
-          <ScalarProperty Name="AppointmentId" ColumnName="AppointmentId" />
           <ScalarProperty Name="Date" ColumnName="Date" />
           <ScalarProperty Name="FromTime" ColumnName="FromTime" />
           <ScalarProperty Name="ToTime" ColumnName="ToTime" />
@@ -133,16 +133,6 @@
           <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
           <ScalarProperty Name="CreatedAt" ColumnName="CreatedAt" />
           <ScalarProperty Name="LastUpdated" ColumnName="LastUpdated" />
-        </MappingFragment>
-      </EntityTypeMapping>
-    </EntitySetMapping>
-    <EntitySetMapping Name="tblUsers">
-      <EntityTypeMapping TypeName="AppointmentDatabaseModel.tblUser">
-        <MappingFragment StoreEntitySet="tblUser">
-          <ScalarProperty Name="Id" ColumnName="Id" />
-          <ScalarProperty Name="Username" ColumnName="Username" />
-          <ScalarProperty Name="Password" ColumnName="Password" />
-          <ScalarProperty Name="Role" ColumnName="Role" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>

@@ -19,9 +19,9 @@ namespace BLL
             company.Address = model.Address;
             company.UserId = model.UserId;
             company.IsDeleted = false;
-         
+
             company.Photo = model.Photo;
-         
+
             company.Email = model.Email;
             company.Description = model.Description;
             company.CreatedAt = DateTime.Now.ToString();
@@ -44,7 +44,7 @@ namespace BLL
         public List<BOCompany> GetAllCompany()
         {
             List<BOCompany> lst = new List<BOCompany>();
-            var temp = _db.tblCompanyDetails.Where(u=>u.IsDeleted==false).ToList();
+            var temp = _db.tblCompanyDetails.Where(u => u.IsDeleted == false).ToList();
             foreach (var model in temp)
             {
                 BOCompany company = new BOCompany();
