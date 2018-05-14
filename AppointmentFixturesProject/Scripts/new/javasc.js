@@ -22,7 +22,7 @@ function loadData() {
                 html += '<td>' + item.StartTime + '</td>';
                 html += '<td>' + item.EndTime + '</td>';
                 html += '<td>' + item.Date + '</td>';
-                html += '<td><a href="#" onclick="return getbyID(' + item.ID + ')  <i class="fa fa-microphone-slash"></i> </a>  <a href="#" onclick="Delete(' + item.ID + ')">Delete</a></td>';
+                html += '<td><a href="#" onclick="return getbyID(' + item.ID + ')">  Edit </a>  <a href="#" onclick="Delete(' + item.ID + ')">Delete</a></td>';
                 html += '</tr>';
             });
             $('.tbody').html(html);
