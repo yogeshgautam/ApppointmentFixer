@@ -20,6 +20,11 @@
     <IISExpressAnonymousAuthentication />
     <IISExpressWindowsAuthentication />
     <IISExpressUseClassicPipelineMode />
+<<<<<<< HEAD
+    <Use64BitIISExpress />
+=======
+>>>>>>> diwasDevelopment
+    <UseGlobalApplicationHostFile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -179,12 +184,14 @@
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Assets\img\nty.png" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="Images\appointment.jpg" />
     <Content Include="Others\css\animate.css" />
     <Content Include="Others\css\bootstrap.min.css" />
     <Content Include="Others\css\font-awesome.min.css" />
@@ -260,6 +267,7 @@
     <Content Include="Others\js\plugins.js" />
     <Content Include="Others\js\popper.min.js" />
     <Content Include="Others\style.css" />
+    <Content Include="Scripts\AppointmentSetOrCancel.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Others\fonts\fontawesome-webfont.eot" />
@@ -268,16 +276,20 @@
     <Content Include="Others\fonts\fontawesome-webfont.woff2" />
     <Content Include="Others\fonts\FontAwesome.otf" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="Scripts\employee.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
     <None Include="Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="Scripts\jquery.unobtrusive-ajax.min.js" />
     <Content Include="Scripts\jquery.validate.js" />
     <Content Include="Scripts\jquery.validate.min.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
     <Content Include="Scripts\modernizr-2.6.2.js" />
+    <Content Include="Scripts\moment.js" />
     <Content Include="Scripts\respond.js" />
     <Content Include="Scripts\respond.min.js" />
+    <Content Include="Scripts\UserScript\UserViewScript.js" />
     <Content Include="Scripts\_references.js" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
@@ -321,10 +333,8 @@
     <Content Include="Views\Company\VIP.cshtml" />
     <Content Include="Views\Company\DeleteVIP.cshtml" />
     <Content Include="Views\Company\EditVIP.cshtml" />
-    <Content Include="Views\Shared\_VIPSharedView.cshtml" />
     <Content Include="Views\VIP\Index.cshtml" />
     <Content Include="Views\VIP\FixAppointment.cshtml" />
-    <Content Include="Views\VIP\ViewAppointment.cshtml" />
     <Content Include="Views\VIP\EditAppointmentTiming.cshtml" />
     <Content Include="Views\VIP\DeleteAppointmentTiming.cshtml" />
     <Content Include="Views\Account\RegisterVIP.cshtml" />
@@ -344,10 +354,22 @@
     <Content Include="Views\Company\DetailsDepartment.cshtml" />
     <Content Include="Views\Company\ScheduleVip.cshtml" />
     <Content Include="Views\Company\DetailsVIP.cshtml" />
+<<<<<<< HEAD
+    <Content Include="Views\Shared\_VipLayout.cshtml" />
+    <Content Include="Views\Shared\_CompanyLayout.cshtml" />
+=======
+    <Content Include="Views\User\FixAppointment.cshtml" />
+    <Content Include="Views\VIP\ViewAppointment.cshtml" />
+    <Content Include="Views\VIP\AppointmentCanceledOrNot.cshtml" />
+    <Content Include="Views\VIP\AppointmentCancelorNot.cshtml" />
+    <Content Include="Views\VIP\UpdatingAppointment.cshtml" />
+    <Content Include="Views\User\ViewSetAppointmentDetails.cshtml" />
+    <Content Include="Views\Company\FixAppointment.cshtml" />
+    <Content Include="Views\Company\EditAppointment.cshtml" />
+>>>>>>> diwasDevelopment
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Images\" />
     <Folder Include="tempClass\" />
     <Folder Include="Views\MyAccount\" />
   </ItemGroup>

@@ -81,15 +81,16 @@
     <Property Name="AppointmentTo" Type="nvarchar(max)" />
     <Property Name="DateTimeId" Type="int" />
     <Property Name="Details" Type="nvarchar(max)" />
+    <Property Name="status" Type="nvarchar" MaxLength="50" />
   </EntityType>
   <EntityType Name="tblAvailableTiming">
     <Key>
       <PropertyRef Name="Id" />
     </Key>
     <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-    <Property Name="Date" Type="date" />
-    <Property Name="StartTime" Type="time" Precision="7" />
-    <Property Name="EndTime" Type="time" Precision="7" />
+    <Property Name="Date" Type="nvarchar" MaxLength="50" />
+    <Property Name="StartTime" Type="nvarchar" MaxLength="50" />
+    <Property Name="EndTime" Type="nvarchar" MaxLength="50" />
     <Property Name="IsAvailable" Type="bit" />
     <Property Name="VipId" Type="int" />
   </EntityType>
@@ -114,10 +115,9 @@
       <PropertyRef Name="Id" />
     </Key>
     <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-    <Property Name="AppointmentId" Type="int" />
     <Property Name="Date" Type="date" />
-    <Property Name="FromTime" Type="time" Precision="7" />
-    <Property Name="ToTime" Type="time" Precision="7" />
+    <Property Name="FromTime" Type="nvarchar" MaxLength="50" />
+    <Property Name="ToTime" Type="nvarchar" MaxLength="50" />
     <Property Name="IsCanceled" Type="bit" />
   </EntityType>
   <EntityType Name="tblDepartment">
@@ -134,15 +134,6 @@
     <Property Name="IsDeleted" Type="bit" />
     <Property Name="CreatedAt" Type="nvarchar" MaxLength="50" />
     <Property Name="LastUpdated" Type="nvarchar" MaxLength="50" />
-  </EntityType>
-  <EntityType Name="tblUser">
-    <Key>
-      <PropertyRef Name="Id" />
-    </Key>
-    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-    <Property Name="Username" Type="nvarchar(max)" />
-    <Property Name="Password" Type="nvarchar(max)" />
-    <Property Name="Role" Type="nvarchar" MaxLength="50" />
   </EntityType>
   <EntityType Name="tblVIPUser">
     <Key>
@@ -255,18 +246,6 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="FK_tblDateTime_tblAppointment">
-    <End Role="tblAppointment" Type="Self.tblAppointment" Multiplicity="0..1" />
-    <End Role="tblDateTime" Type="Self.tblDateTime" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="tblAppointment">
-        <PropertyRef Name="Id" />
-      </Principal>
-      <Dependent Role="tblDateTime">
-        <PropertyRef Name="AppointmentId" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
   <Association Name="FK_tblDepartment_tblCompanyDetails">
     <End Role="tblCompanyDetails" Type="Self.tblCompanyDetails" Multiplicity="0..1" />
     <End Role="tblDepartment" Type="Self.tblDepartment" Multiplicity="*" />
@@ -304,7 +283,6 @@
     <EntitySet Name="tblCompanyDetails" EntityType="Self.tblCompanyDetails" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="tblDateTime" EntityType="Self.tblDateTime" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="tblDepartment" EntityType="Self.tblDepartment" Schema="dbo" store:Type="Tables" />
-    <EntitySet Name="tblUser" EntityType="Self.tblUser" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="tblVIPUser" EntityType="Self.tblVIPUser" Schema="dbo" store:Type="Tables" />
     <AssociationSet Name="FK_dbo_AspNetUserClaims_dbo_AspNetUsers_UserId" Association="Self.FK_dbo_AspNetUserClaims_dbo_AspNetUsers_UserId">
       <End Role="AspNetUsers" EntitySet="AspNetUsers" />
@@ -333,10 +311,6 @@
     <AssociationSet Name="FK_tblAvailableTiming_tblVIPUser" Association="Self.FK_tblAvailableTiming_tblVIPUser">
       <End Role="tblVIPUser" EntitySet="tblVIPUser" />
       <End Role="tblAvailableTiming" EntitySet="tblAvailableTiming" />
-    </AssociationSet>
-    <AssociationSet Name="FK_tblDateTime_tblAppointment" Association="Self.FK_tblDateTime_tblAppointment">
-      <End Role="tblAppointment" EntitySet="tblAppointment" />
-      <End Role="tblDateTime" EntitySet="tblDateTime" />
     </AssociationSet>
     <AssociationSet Name="FK_tblDepartment_tblCompanyDetails" Association="Self.FK_tblDepartment_tblCompanyDetails">
       <End Role="tblCompanyDetails" EntitySet="tblCompanyDetails" />

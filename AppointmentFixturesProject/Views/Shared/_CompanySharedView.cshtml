@@ -18,7 +18,7 @@
                     <span class="icon-bar"></span>
                 </button>
              
-                @Html.ActionLink("Application name", "Index", "Company", new { area = "" }, new { @class = "navbar-brand" })
+                @Html.ActionLink((string)@ViewBag.Companyname, "Index", "Company", new { area = "" }, new { @class = "navbar-brand" })
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
@@ -26,6 +26,7 @@
                     <li>@Html.ActionLink("Create Department", "CreateDepartment", "Company")</li>
                     <li>@Html.ActionLink("VIP", "VIP", "Company")</li>
                     <li>@Html.ActionLink("CreateVIP", "RegisterVIP", "Account")</li>
+                    <li>@Html.ActionLink("Fix Appointment","FixAppointment","Company")</li>
                 </ul>
                 @Html.Partial("_LoginPartial")
             </div>

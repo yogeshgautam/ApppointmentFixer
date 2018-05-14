@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -9,10 +10,24 @@ namespace BO
     public class BODepartment
     {
         public int Id { get; set; }
+
+        [Required]
         public Nullable<int> CompanyId { get; set; }
+
+
+         [Required]
+
+        [Required]
+
         public string Name { get; set; }
+
+        [Required]
         public string phone { get; set; }
+
+
         public string Email { get; set; }
+
+        [Required]
         public string Details { get; set; }
         public string HOD { get; set; }
         public Nullable<bool> IsDeleted { get; set; }

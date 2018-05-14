@@ -100,7 +100,7 @@ namespace AppointmentFixturesProject.Controllers
                     }
                     else if((UserManager.IsInRole(user.Id, "Normal")))
                     {
-                        return RedirectToAction("Index", "Home");
+                        return RedirectToAction("FixAppointment", "User");
 
                     }
                     return RedirectToAction("Index", "Home", new { });
@@ -213,6 +213,14 @@ namespace AppointmentFixturesProject.Controllers
             BLL.BLLDepartment bllDepartment = new BLL.BLLDepartment();
             ViewBag.Department = bllDepartment.GetAllDepartment().Where(u => u.CompanyId == CompanyController.companyId).ToList();
 
+
+            //The Below codes are written to display the Company name in the navigation Bar
+            BLL.BLLCompany bllCompany = new BLL.BLLCompany();
+            string id = System.Web.HttpContext.Current.User.Identity.GetUserId();
+            var lst = bllCompany.GetAllCompany().Where(u => u.UserId == id).FirstOrDefault();   
+            ViewBag.Companyname = lst.Name;
+
+
             return View();
         }
 
@@ -224,6 +232,7 @@ namespace AppointmentFixturesProject.Controllers
         [HttpPost]
         public async Task<ActionResult> RegisterVIP(BO.BOVIPTable model)
         {
+            
             if (ModelState.IsValid)
             {
                 var user = new ApplicationUser { UserName = model.Email, Email = model.Email };
