@@ -14,7 +14,6 @@ namespace DAL
     
     public partial class tblDepartment
     {
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public tblDepartment()
         {
             this.tblAppointments = new HashSet<tblAppointment>();
@@ -32,10 +31,8 @@ namespace DAL
         public string CreatedAt { get; set; }
         public string LastUpdated { get; set; }
     
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<tblAppointment> tblAppointments { get; set; }
         public virtual tblCompanyDetail tblCompanyDetail { get; set; }
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<tblVIPUser> tblVIPUsers { get; set; }
     }
 }

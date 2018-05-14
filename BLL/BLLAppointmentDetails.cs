@@ -10,7 +10,7 @@ namespace BLL
 {
     public class BLLAppointmentDetails
     {
-        AppointmentDatabaseEntities _db = new AppointmentDatabaseEntities();
+        AppointmentDatabaseEntities2 _db = new AppointmentDatabaseEntities2();
         public int CreateAppoointment(BOAppointmentDetails model)
         {
             tblAppointment appointment = new tblAppointment();

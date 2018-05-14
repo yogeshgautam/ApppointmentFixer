@@ -53,6 +53,7 @@
     <Compile Include="BOCompany.cs" />
     <Compile Include="BODateTime.cs" />
     <Compile Include="BODepartment.cs" />
+    <Compile Include="BOMeetingFirst.cs" />
     <Compile Include="BORole.cs" />
     <Compile Include="BOUsers.cs" />
     <Compile Include="BOVIPTable.cs" />

@@ -14,7 +14,6 @@ namespace DAL
     
     public partial class tblDateTime
     {
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public tblDateTime()
         {
             this.tblAppointments = new HashSet<tblAppointment>();
@@ -27,7 +26,6 @@ namespace DAL
         public Nullable<System.TimeSpan> ToTime { get; set; }
         public Nullable<bool> IsCanceled { get; set; }
     
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<tblAppointment> tblAppointments { get; set; }
         public virtual tblAppointment tblAppointment { get; set; }
     }

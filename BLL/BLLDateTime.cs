@@ -11,7 +11,7 @@ namespace BLL
 {
     public class BLLDateTime
     {
-        AppointmentDatabaseEntities _db = new AppointmentDatabaseEntities();
+        AppointmentDatabaseEntities2 _db = new AppointmentDatabaseEntities2();
         public int CreateDateTime(BODateTime model)
         {
             tblDateTime datetime = new tblDateTime();

@@ -10,7 +10,7 @@ namespace BLL
 {
     public class BLLAvailableTiming
     {
-        AppointmentDatabaseEntities _db = new AppointmentDatabaseEntities();
+        AppointmentDatabaseEntities2 _db = new AppointmentDatabaseEntities2();
         public int AddAvailableTiming(BOAvailableTiming model)
         {
             tblAvailableTiming available = new tblAvailableTiming();

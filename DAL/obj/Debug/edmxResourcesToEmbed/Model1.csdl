@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Schema Namespace="AppointmentDatabaseModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+<Schema Namespace="AppointmentDatabaseModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
   <EntityType Name="C__MigrationHistory">
     <Key>
       <PropertyRef Name="MigrationId" />
@@ -79,6 +79,7 @@
     <Property Name="AppointmentTo" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
     <Property Name="DateTimeId" Type="Int32" />
     <Property Name="Details" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="status" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
     <NavigationProperty Name="tblDateTime" Relationship="Self.FK_tblAppointment_tblDateTime" FromRole="tblAppointment" ToRole="tblDateTime" />
     <NavigationProperty Name="tblDepartment" Relationship="Self.FK_tblAppointment_tblDepartment" FromRole="tblAppointment" ToRole="tblDepartment" />
     <NavigationProperty Name="tblDateTimes" Relationship="Self.FK_tblDateTime_tblAppointment" FromRole="tblAppointment" ToRole="tblDateTime" />
@@ -142,6 +143,17 @@
     <NavigationProperty Name="tblAppointments" Relationship="Self.FK_tblAppointment_tblDepartment" FromRole="tblDepartment" ToRole="tblAppointment" />
     <NavigationProperty Name="tblCompanyDetail" Relationship="Self.FK_tblDepartment_tblCompanyDetails" FromRole="tblDepartment" ToRole="tblCompanyDetails" />
     <NavigationProperty Name="tblVIPUsers" Relationship="Self.FK_tblVIPUser_tblDepartment" FromRole="tblDepartment" ToRole="tblVIPUser" />
+  </EntityType>
+  <EntityType Name="tblMeetingFirst">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="VIPuser" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Users" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="StartTime" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="EndTime" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Date" Type="DateTime" Precision="0" />
   </EntityType>
   <EntityType Name="tblUser">
     <Key>
@@ -277,7 +289,7 @@
     <End Role="AspNetRoles" Type="Self.AspNetRole" Multiplicity="*" />
     <End Role="AspNetUsers" Type="Self.AspNetUser" Multiplicity="*" />
   </Association>
-  <EntityContainer Name="AppointmentDatabaseEntities" annotation:LazyLoadingEnabled="true">
+  <EntityContainer Name="AppointmentDatabaseEntities2" annotation:LazyLoadingEnabled="true">
     <EntitySet Name="C__MigrationHistory" EntityType="Self.C__MigrationHistory" />
     <EntitySet Name="AspNetRoles" EntityType="Self.AspNetRole" />
     <EntitySet Name="AspNetUserClaims" EntityType="Self.AspNetUserClaim" />
@@ -289,6 +301,7 @@
     <EntitySet Name="tblCompanyDetails" EntityType="Self.tblCompanyDetail" />
     <EntitySet Name="tblDateTimes" EntityType="Self.tblDateTime" />
     <EntitySet Name="tblDepartments" EntityType="Self.tblDepartment" />
+    <EntitySet Name="tblMeetingFirsts" EntityType="Self.tblMeetingFirst" />
     <EntitySet Name="tblUsers" EntityType="Self.tblUser" />
     <EntitySet Name="tblVIPUsers" EntityType="Self.tblVIPUser" />
     <AssociationSet Name="FK_dbo_AspNetUserClaims_dbo_AspNetUsers_UserId" Association="Self.FK_dbo_AspNetUserClaims_dbo_AspNetUsers_UserId">

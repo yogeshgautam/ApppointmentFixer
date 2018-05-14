@@ -267,7 +267,16 @@
     <Content Include="Others\fonts\fontawesome-webfont.woff" />
     <Content Include="Others\fonts\fontawesome-webfont.woff2" />
     <Content Include="Others\fonts\FontAwesome.otf" />
+    <Content Include="Scripts\CC\bootstrap-theme.css.map" />
+    <Content Include="Scripts\CC\bootstrap-theme.min.css.map" />
+    <Content Include="Scripts\CC\bootstrap.css.map" />
+    <Content Include="Scripts\CC\bootstrap.min.css.map" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="Scripts\CC\bootstrap-theme.css" />
+    <Content Include="Scripts\CC\bootstrap-theme.min.css" />
+    <Content Include="Scripts\CC\bootstrap.css" />
+    <Content Include="Scripts\CC\bootstrap.min.css" />
+    <Content Include="Images\javasc.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
     <None Include="Scripts\jquery.validate-vsdoc.js" />
@@ -276,6 +285,16 @@
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
     <Content Include="Scripts\modernizr-2.6.2.js" />
+    <Content Include="Scripts\new\bootstrap.js" />
+    <Content Include="Scripts\new\bootstrap.min.js" />
+    <Content Include="Scripts\new\employee.js" />
+    <Content Include="Scripts\new\javasc.js" />
+    <Content Include="Scripts\new\JavaScript1.js" />
+    <None Include="Scripts\new\jquery-1.9.1.intellisense.js" />
+    <Content Include="Scripts\new\jquery-1.9.1.js" />
+    <Content Include="Scripts\new\jquery-1.9.1.min.js" />
+    <Content Include="Scripts\new\jquery.unobtrusive-ajax.js" />
+    <Content Include="Scripts\new\jquery.unobtrusive-ajax.min.js" />
     <Content Include="Scripts\respond.js" />
     <Content Include="Scripts\respond.min.js" />
     <Content Include="Scripts\_references.js" />
@@ -344,10 +363,13 @@
     <Content Include="Views\Company\DetailsDepartment.cshtml" />
     <Content Include="Views\Company\ScheduleVip.cshtml" />
     <Content Include="Views\Company\DetailsVIP.cshtml" />
+    <Content Include="Views\Company\CreateMeetingOne.cshtml" />
+    <Content Include="Views\Company\ViewMeetingOne1.cshtml" />
+    <Content Include="Views\Company\ViewMeetingOne.cshtml" />
+    <Content Include="Scripts\new\jquery-1.9.1.min.map" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Images\" />
     <Folder Include="tempClass\" />
     <Folder Include="Views\MyAccount\" />
   </ItemGroup>

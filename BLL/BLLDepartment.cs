@@ -10,7 +10,7 @@ namespace BLL
 {
     public class BLLDepartment
     {
-        AppointmentDatabaseEntities _db = new AppointmentDatabaseEntities();
+        AppointmentDatabaseEntities2 _db = new AppointmentDatabaseEntities2();
         BLLCompany blcompany = new BLLCompany();
         public int CreateDepartment(BODepartment model)
         {

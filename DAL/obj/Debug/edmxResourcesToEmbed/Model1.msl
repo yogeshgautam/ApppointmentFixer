@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-  <EntityContainerMapping StorageEntityContainer="AppointmentDatabaseModelStoreContainer" CdmEntityContainer="AppointmentDatabaseEntities">
+  <EntityContainerMapping StorageEntityContainer="AppointmentDatabaseModelStoreContainer" CdmEntityContainer="AppointmentDatabaseEntities2">
     <EntitySetMapping Name="C__MigrationHistory">
       <EntityTypeMapping TypeName="AppointmentDatabaseModel.C__MigrationHistory">
         <MappingFragment StoreEntitySet="__MigrationHistory">
@@ -76,6 +76,7 @@
           <ScalarProperty Name="AppointmentTo" ColumnName="AppointmentTo" />
           <ScalarProperty Name="DateTimeId" ColumnName="DateTimeId" />
           <ScalarProperty Name="Details" ColumnName="Details" />
+          <ScalarProperty Name="status" ColumnName="status" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
@@ -133,6 +134,18 @@
           <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
           <ScalarProperty Name="CreatedAt" ColumnName="CreatedAt" />
           <ScalarProperty Name="LastUpdated" ColumnName="LastUpdated" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblMeetingFirsts">
+      <EntityTypeMapping TypeName="AppointmentDatabaseModel.tblMeetingFirst">
+        <MappingFragment StoreEntitySet="tblMeetingFirst">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="VIPuser" ColumnName="VIPuser" />
+          <ScalarProperty Name="Users" ColumnName="Users" />
+          <ScalarProperty Name="StartTime" ColumnName="StartTime" />
+          <ScalarProperty Name="EndTime" ColumnName="EndTime" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>

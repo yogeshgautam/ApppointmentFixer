@@ -9,7 +9,7 @@ namespace BLL
 {
     public class BLLRoles
     {
-        AppointmentDatabaseEntities _db = new AppointmentDatabaseEntities();
+        AppointmentDatabaseEntities2 _db = new AppointmentDatabaseEntities2();
         public int CreateRole(BO.BORole model)
         {
             

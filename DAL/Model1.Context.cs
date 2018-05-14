@@ -13,10 +13,10 @@ namespace DAL
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class AppointmentDatabaseEntities : DbContext
+    public partial class AppointmentDatabaseEntities2 : DbContext
     {
-        public AppointmentDatabaseEntities()
-            : base("name=AppointmentDatabaseEntities")
+        public AppointmentDatabaseEntities2()
+            : base("name=AppointmentDatabaseEntities2")
         {
         }
     
@@ -36,6 +36,7 @@ namespace DAL
         public virtual DbSet<tblCompanyDetail> tblCompanyDetails { get; set; }
         public virtual DbSet<tblDateTime> tblDateTimes { get; set; }
         public virtual DbSet<tblDepartment> tblDepartments { get; set; }
+        public virtual DbSet<tblMeetingFirst> tblMeetingFirsts { get; set; }
         public virtual DbSet<tblUser> tblUsers { get; set; }
         public virtual DbSet<tblVIPUser> tblVIPUsers { get; set; }
     }

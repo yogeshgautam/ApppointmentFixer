@@ -14,7 +14,6 @@ namespace DAL
     
     public partial class tblVIPUser
     {
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public tblVIPUser()
         {
             this.tblAvailableTimings = new HashSet<tblAvailableTiming>();
@@ -35,7 +34,6 @@ namespace DAL
         public string CreatedAt { get; set; }
         public string LastUpdated { get; set; }
     
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<tblAvailableTiming> tblAvailableTimings { get; set; }
         public virtual tblDepartment tblDepartment { get; set; }
     }

@@ -4,8 +4,10 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@ViewBag.Title - Appointment Scheduler</title>
-    @Styles.Render("~/Content/css")
-    @Scripts.Render("~/bundles/modernizr")
+
+
+    <link href="~/Scripts/CC/bootstrap.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
 <body>
@@ -22,10 +24,12 @@
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li>@Html.ActionLink("Departments", "Index", "Company")</li>
                     <li>@Html.ActionLink("Create Department", "CreateDepartment", "Company")</li>
-                    <li>@Html.ActionLink("VIP", "VIP", "Company")</li>
+                    <li>@Html.ActionLink("View Departments", "Index", "Company")</li>
+                    <li>@Html.ActionLink(" view VIP", "VIP", "Company")</li>
                     <li>@Html.ActionLink("CreateVIP", "RegisterVIP", "Account")</li>
+                    <li>@Html.ActionLink("Create Meeting", "CreateMeetingOne", "Company")</li>
+                    <li>@Html.ActionLink("View Meeting", "ViewMeetingOne", "Company")</li>
                 </ul>
                 @Html.Partial("_LoginPartial")
             </div>
@@ -45,8 +49,6 @@
         </div>
     </div>
 
-    @Scripts.Render("~/bundles/jquery")
-    @Scripts.Render("~/bundles/bootstrap")
-    @RenderSection("scripts", required: false)
+   
 </body>
 </html>

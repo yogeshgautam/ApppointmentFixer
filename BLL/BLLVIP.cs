@@ -11,7 +11,7 @@ namespace BLL
 {
     public class BLLVIP
     {
-        AppointmentDatabaseEntities _db = new AppointmentDatabaseEntities();
+        AppointmentDatabaseEntities2 _db = new AppointmentDatabaseEntities2();
         BLLDepartment bldepartment = new BLLDepartment();
         public int CreateVIP(BOVIPTable model)
         {

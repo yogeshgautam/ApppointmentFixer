@@ -53,6 +53,7 @@
     <Compile Include="BLLCompany.cs" />
     <Compile Include="BLLDateTime.cs" />
     <Compile Include="BLLDepartment.cs" />
+    <Compile Include="BLLMeetingFirst.cs" />
     <Compile Include="BLLRoles.cs" />
     <Compile Include="BLLUser.cs" />
     <Compile Include="BLLVIP.cs" />

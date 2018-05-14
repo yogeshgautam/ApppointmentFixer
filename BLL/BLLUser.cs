@@ -10,7 +10,7 @@ namespace BLL
 {
     public class BLLUser
     {
-        AppointmentDatabaseEntities _db = new AppointmentDatabaseEntities();
+        AppointmentDatabaseEntities2 _db = new AppointmentDatabaseEntities2();
         public List<BOUsers> GetAllUsers()
         {
             List<BOUsers> lst = new List<BOUsers>();

@@ -8,3 +8,13 @@ D:\Users\yogesh\documents\visual studio 2013\Projects\AppointmentFixturesProject
 D:\Users\yogesh\documents\visual studio 2013\Projects\AppointmentFixturesProject\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
 D:\Users\yogesh\documents\visual studio 2013\Projects\AppointmentFixturesProject\DAL\obj\Debug\DAL.dll
 D:\Users\yogesh\documents\visual studio 2013\Projects\AppointmentFixturesProject\DAL\obj\Debug\DAL.pdb
+C:\Users\HP\Desktop\appointment\ApppointmentFixer\DAL\bin\Debug\DAL.dll.config
+C:\Users\HP\Desktop\appointment\ApppointmentFixer\DAL\bin\Debug\DAL.dll
+C:\Users\HP\Desktop\appointment\ApppointmentFixer\DAL\bin\Debug\DAL.pdb
+C:\Users\HP\Desktop\appointment\ApppointmentFixer\DAL\bin\Debug\EntityFramework.dll
+C:\Users\HP\Desktop\appointment\ApppointmentFixer\DAL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\HP\Desktop\appointment\ApppointmentFixer\DAL\bin\Debug\EntityFramework.xml
+C:\Users\HP\Desktop\appointment\ApppointmentFixer\DAL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\HP\Desktop\appointment\ApppointmentFixer\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+C:\Users\HP\Desktop\appointment\ApppointmentFixer\DAL\obj\Debug\DAL.dll
+C:\Users\HP\Desktop\appointment\ApppointmentFixer\DAL\obj\Debug\DAL.pdb

@@ -14,7 +14,6 @@ namespace DAL
     
     public partial class tblCompanyDetail
     {
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public tblCompanyDetail()
         {
             this.tblDepartments = new HashSet<tblDepartment>();
@@ -32,7 +31,6 @@ namespace DAL
         public string CreatedAt { get; set; }
         public string LastUpdated { get; set; }
     
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<tblDepartment> tblDepartments { get; set; }
     }
 }
