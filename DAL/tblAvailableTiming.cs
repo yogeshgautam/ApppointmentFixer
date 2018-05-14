@@ -15,9 +15,9 @@ namespace DAL
     public partial class tblAvailableTiming
     {
         public int Id { get; set; }
-        public Nullable<System.DateTime> Date { get; set; }
-        public Nullable<System.TimeSpan> StartTime { get; set; }
-        public Nullable<System.TimeSpan> EndTime { get; set; }
+        public string Date { get; set; }
+        public string StartTime { get; set; }
+        public string EndTime { get; set; }
         public Nullable<bool> IsAvailable { get; set; }
         public Nullable<int> VipId { get; set; }
     

@@ -100,7 +100,7 @@ namespace AppointmentFixturesProject.Controllers
                     }
                     else if((UserManager.IsInRole(user.Id, "Normal")))
                     {
-                        return RedirectToAction("Index", "Home");
+                        return RedirectToAction("FixAppointment", "User");
 
                     }
                     return RedirectToAction("Index", "Home", new { });

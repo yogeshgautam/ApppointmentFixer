@@ -18,12 +18,19 @@ namespace BO
         [Required]
         public string Designation { get; set; }
 
+
+
+
         [Required]
         public string Phone { get; set; }
 
         [Required]
+
         [EmailAddress]
         public string Email { get; set; }
+
+
+
 
         [Required]
         public string Address1 { get; set; }
@@ -40,7 +47,12 @@ namespace BO
         [Required]
         public string Password { get; set; }
 
+ 
         [Compare("Password")]
+
+        [Required]
+        [Compare("Password", ErrorMessage = "Password Mismatch")]
+
         public string ConfirmPassword { get; set; }
         public BODepartment lstDepartment { get; set; }
     }

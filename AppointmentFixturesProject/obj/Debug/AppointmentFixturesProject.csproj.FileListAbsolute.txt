@@ -59,6 +59,7 @@ D:\Users\yogesh\documents\visual studio 2013\Projects\AppointmentFixturesProject
 D:\Users\yogesh\documents\visual studio 2013\Projects\AppointmentFixturesProject\AppointmentFixturesProject\obj\Debug\AppointmentFixturesProject.csprojResolveAssemblyReference.cache
 D:\Users\yogesh\documents\visual studio 2013\Projects\AppointmentFixturesProject\AppointmentFixturesProject\obj\Debug\AppointmentFixturesProject.dll
 D:\Users\yogesh\documents\visual studio 2013\Projects\AppointmentFixturesProject\AppointmentFixturesProject\obj\Debug\AppointmentFixturesProject.pdb
+<<<<<<< HEAD
 C:\Users\Manish\Desktop\ApppointmentFixer\AppointmentFixturesProject\bin\AppointmentFixturesProject.dll.config
 C:\Users\Manish\Desktop\ApppointmentFixer\AppointmentFixturesProject\bin\AppointmentFixturesProject.dll
 C:\Users\Manish\Desktop\ApppointmentFixer\AppointmentFixturesProject\bin\AppointmentFixturesProject.pdb
@@ -124,3 +125,66 @@ C:\Users\Manish\Desktop\ApppointmentFixer\AppointmentFixturesProject\obj\Debug\A
 C:\Users\Manish\Desktop\ApppointmentFixer\AppointmentFixturesProject\obj\Debug\AppointmentFixturesProject.csproj.CoreCompileInputs.cache
 C:\Users\Manish\Desktop\ApppointmentFixer\AppointmentFixturesProject\obj\Debug\AppointmentFixturesProject.dll
 C:\Users\Manish\Desktop\ApppointmentFixer\AppointmentFixturesProject\obj\Debug\AppointmentFixturesProject.pdb
+=======
+J:\M\Final Appointment Project\FInal Appointment Proooojet\ApppointmentFixer\AppointmentFixturesProject\bin\AppointmentFixturesProject.dll.config
+J:\M\Final Appointment Project\FInal Appointment Proooojet\ApppointmentFixer\AppointmentFixturesProject\bin\AppointmentFixturesProject.dll
+J:\M\Final Appointment Project\FInal Appointment Proooojet\ApppointmentFixer\AppointmentFixturesProject\bin\AppointmentFixturesProject.pdb
+J:\M\Final Appointment Project\FInal Appointment Proooojet\ApppointmentFixer\AppointmentFixturesProject\bin\Antlr3.Runtime.dll
+J:\M\Final Appointment Project\FInal Appointment Proooojet\ApppointmentFixer\AppointmentFixturesProject\bin\BLL.dll
+J:\M\Final Appointment Project\FInal Appointment Proooojet\ApppointmentFixer\AppointmentFixturesProject\bin\BO.dll
+J:\M\Final Appointment Project\FInal Appointment Proooojet\ApppointmentFixer\AppointmentFixturesProject\bin\EntityFramework.dll
+J:\M\Final Appointment Project\FInal Appointment Proooojet\ApppointmentFixer\AppointmentFixturesProject\bin\EntityFramework.SqlServer.dll
+J:\M\Final Appointment Project\FInal Appointment Proooojet\ApppointmentFixer\AppointmentFixturesProject\bin\Microsoft.AspNet.Identity.Core.dll
+J:\M\Final Appointment Project\FInal Appointment Proooojet\ApppointmentFixer\AppointmentFixturesProject\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+J:\M\Final Appointment Project\FInal Appointment Proooojet\ApppointmentFixer\AppointmentFixturesProject\bin\Microsoft.AspNet.Identity.Owin.dll
+J:\M\Final Appointment Project\FInal Appointment Proooojet\ApppointmentFixer\AppointmentFixturesProject\bin\Microsoft.Owin.dll
+J:\M\Final Appointment Project\FInal Appointment Proooojet\ApppointmentFixer\AppointmentFixturesProject\bin\Microsoft.Owin.Host.SystemWeb.dll
+J:\M\Final Appointment Project\FInal Appointment Proooojet\ApppointmentFixer\AppointmentFixturesProject\bin\Microsoft.Owin.Security.Cookies.dll
+J:\M\Final Appointment Project\FInal Appointment Proooojet\ApppointmentFixer\AppointmentFixturesProject\bin\Microsoft.Owin.Security.dll
+J:\M\Final Appointment Project\FInal Appointment Proooojet\ApppointmentFixer\AppointmentFixturesProject\bin\Microsoft.Owin.Security.Facebook.dll
+J:\M\Final Appointment Project\FInal Appointment Proooojet\ApppointmentFixer\AppointmentFixturesProject\bin\Microsoft.Owin.Security.Google.dll
+J:\M\Final Appointment Project\FInal Appointment Proooojet\ApppointmentFixer\AppointmentFixturesProject\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+J:\M\Final Appointment Project\FInal Appointment Proooojet\ApppointmentFixer\AppointmentFixturesProject\bin\Microsoft.Owin.Security.OAuth.dll
+J:\M\Final Appointment Project\FInal Appointment Proooojet\ApppointmentFixer\AppointmentFixturesProject\bin\Microsoft.Owin.Security.Twitter.dll
+J:\M\Final Appointment Project\FInal Appointment Proooojet\ApppointmentFixer\AppointmentFixturesProject\bin\Microsoft.Web.Infrastructure.dll
+J:\M\Final Appointment Project\FInal Appointment Proooojet\ApppointmentFixer\AppointmentFixturesProject\bin\Newtonsoft.Json.dll
+J:\M\Final Appointment Project\FInal Appointment Proooojet\ApppointmentFixer\AppointmentFixturesProject\bin\Owin.dll
+J:\M\Final Appointment Project\FInal Appointment Proooojet\ApppointmentFixer\AppointmentFixturesProject\bin\System.Web.Helpers.dll
+J:\M\Final Appointment Project\FInal Appointment Proooojet\ApppointmentFixer\AppointmentFixturesProject\bin\System.Web.Mvc.dll
+J:\M\Final Appointment Project\FInal Appointment Proooojet\ApppointmentFixer\AppointmentFixturesProject\bin\System.Web.Optimization.dll
+J:\M\Final Appointment Project\FInal Appointment Proooojet\ApppointmentFixer\AppointmentFixturesProject\bin\System.Web.Razor.dll
+J:\M\Final Appointment Project\FInal Appointment Proooojet\ApppointmentFixer\AppointmentFixturesProject\bin\System.Web.WebPages.Deployment.dll
+J:\M\Final Appointment Project\FInal Appointment Proooojet\ApppointmentFixer\AppointmentFixturesProject\bin\System.Web.WebPages.dll
+J:\M\Final Appointment Project\FInal Appointment Proooojet\ApppointmentFixer\AppointmentFixturesProject\bin\System.Web.WebPages.Razor.dll
+J:\M\Final Appointment Project\FInal Appointment Proooojet\ApppointmentFixer\AppointmentFixturesProject\bin\WebGrease.dll
+J:\M\Final Appointment Project\FInal Appointment Proooojet\ApppointmentFixer\AppointmentFixturesProject\bin\DAL.dll
+J:\M\Final Appointment Project\FInal Appointment Proooojet\ApppointmentFixer\AppointmentFixturesProject\bin\BLL.pdb
+J:\M\Final Appointment Project\FInal Appointment Proooojet\ApppointmentFixer\AppointmentFixturesProject\bin\BO.pdb
+J:\M\Final Appointment Project\FInal Appointment Proooojet\ApppointmentFixer\AppointmentFixturesProject\bin\EntityFramework.xml
+J:\M\Final Appointment Project\FInal Appointment Proooojet\ApppointmentFixer\AppointmentFixturesProject\bin\EntityFramework.SqlServer.xml
+J:\M\Final Appointment Project\FInal Appointment Proooojet\ApppointmentFixer\AppointmentFixturesProject\bin\System.Web.Helpers.xml
+J:\M\Final Appointment Project\FInal Appointment Proooojet\ApppointmentFixer\AppointmentFixturesProject\bin\System.Web.Mvc.xml
+J:\M\Final Appointment Project\FInal Appointment Proooojet\ApppointmentFixer\AppointmentFixturesProject\bin\System.Web.Optimization.xml
+J:\M\Final Appointment Project\FInal Appointment Proooojet\ApppointmentFixer\AppointmentFixturesProject\bin\System.Web.Razor.xml
+J:\M\Final Appointment Project\FInal Appointment Proooojet\ApppointmentFixer\AppointmentFixturesProject\bin\System.Web.WebPages.xml
+J:\M\Final Appointment Project\FInal Appointment Proooojet\ApppointmentFixer\AppointmentFixturesProject\bin\System.Web.WebPages.Deployment.xml
+J:\M\Final Appointment Project\FInal Appointment Proooojet\ApppointmentFixer\AppointmentFixturesProject\bin\System.Web.WebPages.Razor.xml
+J:\M\Final Appointment Project\FInal Appointment Proooojet\ApppointmentFixer\AppointmentFixturesProject\bin\Antlr3.Runtime.pdb
+J:\M\Final Appointment Project\FInal Appointment Proooojet\ApppointmentFixer\AppointmentFixturesProject\bin\Newtonsoft.Json.xml
+J:\M\Final Appointment Project\FInal Appointment Proooojet\ApppointmentFixer\AppointmentFixturesProject\bin\Microsoft.AspNet.Identity.Core.xml
+J:\M\Final Appointment Project\FInal Appointment Proooojet\ApppointmentFixer\AppointmentFixturesProject\bin\Microsoft.AspNet.Identity.Owin.xml
+J:\M\Final Appointment Project\FInal Appointment Proooojet\ApppointmentFixer\AppointmentFixturesProject\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+J:\M\Final Appointment Project\FInal Appointment Proooojet\ApppointmentFixer\AppointmentFixturesProject\bin\Microsoft.Owin.xml
+J:\M\Final Appointment Project\FInal Appointment Proooojet\ApppointmentFixer\AppointmentFixturesProject\bin\Microsoft.Owin.Host.SystemWeb.xml
+J:\M\Final Appointment Project\FInal Appointment Proooojet\ApppointmentFixer\AppointmentFixturesProject\bin\Microsoft.Owin.Security.xml
+J:\M\Final Appointment Project\FInal Appointment Proooojet\ApppointmentFixer\AppointmentFixturesProject\bin\Microsoft.Owin.Security.Facebook.xml
+J:\M\Final Appointment Project\FInal Appointment Proooojet\ApppointmentFixer\AppointmentFixturesProject\bin\Microsoft.Owin.Security.Cookies.xml
+J:\M\Final Appointment Project\FInal Appointment Proooojet\ApppointmentFixer\AppointmentFixturesProject\bin\Microsoft.Owin.Security.OAuth.xml
+J:\M\Final Appointment Project\FInal Appointment Proooojet\ApppointmentFixer\AppointmentFixturesProject\bin\Microsoft.Owin.Security.Google.xml
+J:\M\Final Appointment Project\FInal Appointment Proooojet\ApppointmentFixer\AppointmentFixturesProject\bin\Microsoft.Owin.Security.Twitter.xml
+J:\M\Final Appointment Project\FInal Appointment Proooojet\ApppointmentFixer\AppointmentFixturesProject\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+J:\M\Final Appointment Project\FInal Appointment Proooojet\ApppointmentFixer\AppointmentFixturesProject\bin\DAL.pdb
+J:\M\Final Appointment Project\FInal Appointment Proooojet\ApppointmentFixer\AppointmentFixturesProject\obj\Debug\AppointmentFixturesProject.csprojResolveAssemblyReference.cache
+J:\M\Final Appointment Project\FInal Appointment Proooojet\ApppointmentFixer\AppointmentFixturesProject\obj\Debug\AppointmentFixturesProject.dll
+J:\M\Final Appointment Project\FInal Appointment Proooojet\ApppointmentFixer\AppointmentFixturesProject\obj\Debug\AppointmentFixturesProject.pdb
+>>>>>>> diwasDevelopment
