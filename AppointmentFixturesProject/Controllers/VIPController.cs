@@ -136,9 +136,25 @@ namespace AppointmentFixturesProject.Controllers
             }
             
         }
+<<<<<<< HEAD
         //asdfasd
         //conformed
+=======
+
+<<<<<<< HEAD
+        //Notification Message
+        BLLAppointmentDetails bllappointmentdetails = new BLLAppointmentDetails();
+        [HttpGet]
+        public JsonResult GetNotifications()
+        {
+            return Json(bllappointmentdetails.GetAllAppointment(), JsonRequestBehavior.AllowGet);
+        }
+=======
+       
+        
+>>>>>>> a6e5fc65e27473bca30aedff8c6f742c84974d8f
     }
+>>>>>>> diwasDevelopment
 
 
     }

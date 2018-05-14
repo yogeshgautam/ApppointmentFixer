@@ -2,9 +2,9 @@
 
 @{
     ViewBag.Title = "CreateDepartment";
-    Layout = "~/Views/Shared/_CompanySharedView.cshtml";
+    Layout = "~/Views/Shared/_CompanyLayout.cshtml";
 }
-
+<br/>
 <h2>CreateDepartment</h2>
 
 @using (Html.BeginForm()) 
@@ -59,7 +59,7 @@
             @Html.LabelFor(model => model.Details, htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
                 @Html.TextAreaFor(model => model.Details, new {  @class = "form-control" } )
-                @Html.ValidationMessageFor(model => model.Email, "", new { @class = "text-danger" })
+                @Html.ValidationMessageFor(model => model.Details, "", new { @class = "text-danger" })
             </div>
         </div>
 

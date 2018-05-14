@@ -36,11 +36,20 @@ namespace AppointmentFixturesProject.Controllers
         public CompanyController()
         {
 
+<<<<<<< HEAD
+             string id = System.Web.HttpContext.Current.User.Identity.GetUserId();
+             var lst = bllCompany.GetAllCompany().Where(u => u.UserId == id).FirstOrDefault();
+             companyId = lst.Id;
+             companyName = lst.Name;
+             ViewBag.Companyname = lst.Name;
+         }
+=======
             string id = System.Web.HttpContext.Current.User.Identity.GetUserId();
             var lst = bllCompany.GetAllCompany().Where(u => u.UserId == id).FirstOrDefault();
             companyId = lst.Id;
             companyName = lst.Name;
         }
+>>>>>>> diwasDevelopment
 
 
         //this method is called to get the application name in the navigation bar
@@ -74,14 +83,22 @@ namespace AppointmentFixturesProject.Controllers
         [HttpPost]
         public ActionResult CreateDepartment(BODepartment model)
         {
-            model.CompanyId = companyId;
-            if (bllDepartment.CreateDepartment(model) == 1)
+            if (ModelState.IsValid)
             {
-                ViewBag.Message = "Department Created Successfully";
+                
+                model.CompanyId = companyId;
+                if (bllDepartment.CreateDepartment(model) == 1)
+                {
+                    ViewBag.Message = "Department Created Successfully";
+                }
+                else
+                {
+                    ViewBag.Message = "There was a problem Creating Department. Please Contact Administrator for Support.";
+                }
             }
             else
             {
-                ViewBag.Message = "There was a problem Creating Department. Please Contact Administrator for Support.";
+                ViewBag.Message = "Please Enter Correct Information";
             }
 
             return View();

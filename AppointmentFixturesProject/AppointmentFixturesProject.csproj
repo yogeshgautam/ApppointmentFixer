@@ -20,6 +20,10 @@
     <IISExpressAnonymousAuthentication />
     <IISExpressWindowsAuthentication />
     <IISExpressUseClassicPipelineMode />
+<<<<<<< HEAD
+    <Use64BitIISExpress />
+=======
+>>>>>>> diwasDevelopment
     <UseGlobalApplicationHostFile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -180,12 +184,14 @@
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Assets\img\nty.png" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="Images\appointment.jpg" />
     <Content Include="Others\css\animate.css" />
     <Content Include="Others\css\bootstrap.min.css" />
     <Content Include="Others\css\font-awesome.min.css" />
@@ -327,7 +333,6 @@
     <Content Include="Views\Company\VIP.cshtml" />
     <Content Include="Views\Company\DeleteVIP.cshtml" />
     <Content Include="Views\Company\EditVIP.cshtml" />
-    <Content Include="Views\Shared\_VIPSharedView.cshtml" />
     <Content Include="Views\VIP\Index.cshtml" />
     <Content Include="Views\VIP\FixAppointment.cshtml" />
     <Content Include="Views\VIP\EditAppointmentTiming.cshtml" />
@@ -349,6 +354,10 @@
     <Content Include="Views\Company\DetailsDepartment.cshtml" />
     <Content Include="Views\Company\ScheduleVip.cshtml" />
     <Content Include="Views\Company\DetailsVIP.cshtml" />
+<<<<<<< HEAD
+    <Content Include="Views\Shared\_VipLayout.cshtml" />
+    <Content Include="Views\Shared\_CompanyLayout.cshtml" />
+=======
     <Content Include="Views\User\FixAppointment.cshtml" />
     <Content Include="Views\VIP\ViewAppointment.cshtml" />
     <Content Include="Views\VIP\AppointmentCanceledOrNot.cshtml" />
@@ -357,10 +366,10 @@
     <Content Include="Views\User\ViewSetAppointmentDetails.cshtml" />
     <Content Include="Views\Company\FixAppointment.cshtml" />
     <Content Include="Views\Company\EditAppointment.cshtml" />
+>>>>>>> diwasDevelopment
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Images\" />
     <Folder Include="tempClass\" />
     <Folder Include="Views\MyAccount\" />
   </ItemGroup>

@@ -12,6 +12,25 @@ D:\Users\yogesh\documents\visual studio 2013\Projects\AppointmentFixturesProject
 D:\Users\yogesh\documents\visual studio 2013\Projects\AppointmentFixturesProject\BLL\obj\Debug\BLL.csprojResolveAssemblyReference.cache
 D:\Users\yogesh\documents\visual studio 2013\Projects\AppointmentFixturesProject\BLL\obj\Debug\BLL.dll
 D:\Users\yogesh\documents\visual studio 2013\Projects\AppointmentFixturesProject\BLL\obj\Debug\BLL.pdb
+<<<<<<< HEAD
+C:\Users\Manish\Desktop\ApppointmentFixer\BLL\bin\Debug\BLL.dll.config
+C:\Users\Manish\Desktop\ApppointmentFixer\BLL\bin\Debug\BLL.dll
+C:\Users\Manish\Desktop\ApppointmentFixer\BLL\bin\Debug\BLL.pdb
+C:\Users\Manish\Desktop\ApppointmentFixer\BLL\bin\Debug\BO.dll
+C:\Users\Manish\Desktop\ApppointmentFixer\BLL\bin\Debug\DAL.dll
+C:\Users\Manish\Desktop\ApppointmentFixer\BLL\bin\Debug\EntityFramework.dll
+C:\Users\Manish\Desktop\ApppointmentFixer\BLL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Manish\Desktop\ApppointmentFixer\BLL\bin\Debug\BO.pdb
+C:\Users\Manish\Desktop\ApppointmentFixer\BLL\bin\Debug\BO.dll.config
+C:\Users\Manish\Desktop\ApppointmentFixer\BLL\bin\Debug\DAL.pdb
+C:\Users\Manish\Desktop\ApppointmentFixer\BLL\bin\Debug\DAL.dll.config
+C:\Users\Manish\Desktop\ApppointmentFixer\BLL\bin\Debug\EntityFramework.xml
+C:\Users\Manish\Desktop\ApppointmentFixer\BLL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Manish\Desktop\ApppointmentFixer\BLL\obj\Debug\BLL.csprojResolveAssemblyReference.cache
+C:\Users\Manish\Desktop\ApppointmentFixer\BLL\obj\Debug\BLL.csproj.CoreCompileInputs.cache
+C:\Users\Manish\Desktop\ApppointmentFixer\BLL\obj\Debug\BLL.dll
+C:\Users\Manish\Desktop\ApppointmentFixer\BLL\obj\Debug\BLL.pdb
+=======
 J:\M\Final Appointment Project\FInal Appointment Proooojet\ApppointmentFixer\BLL\bin\Debug\BLL.dll.config
 J:\M\Final Appointment Project\FInal Appointment Proooojet\ApppointmentFixer\BLL\bin\Debug\BLL.dll
 J:\M\Final Appointment Project\FInal Appointment Proooojet\ApppointmentFixer\BLL\bin\Debug\BLL.pdb
@@ -26,3 +45,4 @@ J:\M\Final Appointment Project\FInal Appointment Proooojet\ApppointmentFixer\BLL
 J:\M\Final Appointment Project\FInal Appointment Proooojet\ApppointmentFixer\BLL\obj\Debug\BLL.csprojResolveAssemblyReference.cache
 J:\M\Final Appointment Project\FInal Appointment Proooojet\ApppointmentFixer\BLL\obj\Debug\BLL.dll
 J:\M\Final Appointment Project\FInal Appointment Proooojet\ApppointmentFixer\BLL\obj\Debug\BLL.pdb
+>>>>>>> diwasDevelopment
