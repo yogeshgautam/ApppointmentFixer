@@ -17,12 +17,12 @@ function loadData() {
             $.each(result, function (key, item) {
                 html += '<tr>';
                 html += '<td>' + item.ID + '</td>';
-                html += '<td>' + item.VIPuser + '</td>';
+                html += '<td>' + item.VIPname + '</td>';
                 html += '<td>' + item.Users + '</td>';
                 html += '<td>' + item.StartTime + '</td>';
                 html += '<td>' + item.EndTime + '</td>';
                 html += '<td>' + item.Date + '</td>';
-                html += '<td><a href="#" onclick="return getbyID(' + item.ID + ')">  Edit </a>  <a href="#" onclick="Delete(' + item.ID + ')">Delete</a></td>';
+                html += '<td><a href="#"  class="btn btn-info"  onclick="return getbyID(' + item.ID + ')" >Edit </a>  <a href="#" class="btn btn-danger" onclick="Delete(' + item.ID + ')">Delete</a></td>';
                 html += '</tr>';
             });
             $('.tbody').html(html);

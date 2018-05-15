@@ -17,3 +17,4 @@ C:\Users\HP\Desktop\appointment\ApppointmentFixer\BO\bin\Debug\EntityFramework.x
 C:\Users\HP\Desktop\appointment\ApppointmentFixer\BO\bin\Debug\EntityFramework.SqlServer.xml
 C:\Users\HP\Desktop\appointment\ApppointmentFixer\BO\obj\Debug\BO.dll
 C:\Users\HP\Desktop\appointment\ApppointmentFixer\BO\obj\Debug\BO.pdb
+C:\Users\HP\Desktop\appointment\ApppointmentFixer\BO\obj\Debug\BO.csprojResolveAssemblyReference.cache

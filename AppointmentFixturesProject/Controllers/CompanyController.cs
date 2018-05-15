@@ -92,16 +92,7 @@ namespace AppointmentFixturesProject.Controllers
             return View(lst);
         }
 
-        public ActionResult CreateVIP()
-        {
-            var x = bllDepartment.GetAllDepartment().Where(u=>u.CompanyId==companyId).ToList();
-            ViewBag.Department = x;
-
-            var y = bluser.GetAllUsers();
-            ViewBag.Users = y;
-
-            return View();
-        }
+        
         [HttpPost]
         public ActionResult CreateVIP(BOVIPTable model)
         {
@@ -218,6 +209,7 @@ namespace AppointmentFixturesProject.Controllers
              var i = bllMeetingFirst.AddMeetingFirst(model);
 
              ViewBag.Company = bllvip.GetAllVIP().Where(u => u.lstDepartment.CompanyId == companyId).ToList();
+
              if (i > 0)
              {
                  ViewBag.Message = "Meeting has been created";
@@ -227,6 +219,7 @@ namespace AppointmentFixturesProject.Controllers
          [HttpGet]
          public ActionResult ViewMeetingOne()
          {
+            
              //var ae = bllMeetingFirst.GetALLMeeting();
              //foreach (var item in ae)
              //{
@@ -240,6 +233,12 @@ namespace AppointmentFixturesProject.Controllers
          public JsonResult List()
          {
              var ae = bllMeetingFirst.GetALLMeeting();
+             foreach (var item in ae)
+             {
+                 var a = bllvip.GetVIPById(Convert.ToInt32(item.VIPuser));
+                 item.VipName = a.FullName;
+             }
+             
              return Json(ae, JsonRequestBehavior.AllowGet);
          }
 
