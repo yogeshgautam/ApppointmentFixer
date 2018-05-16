@@ -1,11 +1,14 @@
-﻿@model IEnumerable<BO.BOAvailableTiming>
+﻿@model IEnumerable<BO.BOVipViewModel>
 
 @{
     ViewBag.Title = "ViewAppointment";
     Layout = "~/Views/Shared/_VIPSharedView.cshtml";
 }
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
 <div class="container">
-    
+    <br/>
     <h2>View Appointment</h2>
     <hr />
     <div class="container">
@@ -23,44 +26,92 @@
                 <th>
                     @Html.DisplayNameFor(model => model.IsAvailable)
                 </th>
+=======
+>>>>>>> bcc728bb558e224d7ad902b5f8d898ada0149495
+<br />
+<br />
+<br />
+<table class="table">
+    <tr class="success">
+        <th>
+            @Html.DisplayNameFor(model => model.Date )
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.FromTime)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ToTime)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DepartmentId)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.AppointmentFrom)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Details)
+        </th>
+<<<<<<< HEAD
+=======
+>>>>>>> diwasDevelopment
+>>>>>>> bcc728bb558e224d7ad902b5f8d898ada0149495
 
-                <th></th>
-            </tr>
+       
+        <th>
+            @Html.DisplayNameFor(model=>model.IsCanceled)
+        </th>
 
-            @foreach (var item in Model)
+
+        
+    </tr>
+
+
+
+@foreach (var item in Model)
+{
+    <tr>
+        
+            @Html.HiddenFor(modelItem=>item.Id )
+        
+
+        <td>
+            @Html.DisplayFor(modelItem => item.Date)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.FromTime)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ToTime)
+        </td>
+
+        <td>
+            @Html.DisplayFor(modelItem => item.DepartmentId)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.AppointmentFrom)
+        </td>
+
+        
+
+        <td>
+            
+            @if (item.IsCanceled==true)
             {
-                <tr>
-                    <td>
-                        @Html.DisplayFor(modelItem => item.Date)
-                    </td>
-                    <td>
-                        @Html.DisplayFor(modelItem => item.StartTime)
-                    </td>
-                    <td>
-                        @Html.DisplayFor(modelItem => item.EndTime)
-                    </td>
-                    <td>
-                        @if (item.IsAvailable == true)
-                        {
-                            <text>Yes</text>
-                        }
-                        else
-                        {
-                            <text>No</text>
-                        }
-
-                    </td>
-
-                    <td>
-                        @Html.ActionLink("Edit", "EditAppointmentTiming", new { id = item.Id }, new { @class = "btn btn-warning" })
-
-                        @Html.ActionLink("Delete", "DeleteAppointmentTiming", new { id = item.Id }, new { @class = "btn btn-danger" })
-                    </td>
-                </tr>
+                @Html.Label("Yes")
+            }
+            else
+            {
+              @Html.Label("No")
             }
 
-        </table>
-    </div>
-</div>
+        </td>
+       
+        <td>
+            @Html.ActionLink("Update", "UpdatingAppointment", new { id=item.Id},new { @class = "btn btn-info" })
+        </td>
+    </tr>
+}
 
+    
 
+</table>

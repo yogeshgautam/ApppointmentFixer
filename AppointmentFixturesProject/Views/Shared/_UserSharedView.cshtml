@@ -1,101 +1,56 @@
-﻿@{
-    Layout = null;
-}
-
-<!DOCTYPE html>
-<html lang="en">
-
+﻿
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="description" content="">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <!-- Title -->
-    <title>Appointment Fixtures</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - Appointment Scheduler</title>
+    @Styles.Render("~/Content/css")
+<<<<<<< HEAD
+=======
 
-    <!-- Favicon -->
-    <link rel="icon" href="~/Others/img/core-img/favicon.ico">
+    @Scripts.Render("~/bundles/modernizr")
+>>>>>>> bcc728bb558e224d7ad902b5f8d898ada0149495
 
-    <!-- Core Stylesheet -->
-    <link href="~/Others/style.css" rel="stylesheet">
-
-    <!-- Responsive CSS -->
-    <link href="~/Others/css/responsive.css" rel="stylesheet">
-
+    @Scripts.Render("~/bundles/modernizr")
+ 
 </head>
-
 <body>
-    <!-- ***** Preloader Start ***** -->
-    <div id="preloader">
-        <div class="mosh-preloader"></div>
-    </div>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
 
-    <!-- ***** Header Area Start ***** -->
-    <div class="container-fluid h-100" style="background-color: #25499f">
-        <div class="row h-100">
-            <!-- Menu Area Start -->
-            <div class="col-12 h-100">
-                <div class="menu_area h-100">
-                    <nav class="navbar h-100 navbar-expand-lg align-items-center">
-                        <!-- Logo -->
-                        <a class="navbar-brand" href="index.html">Appointment Fixtures</a>
-
-                        <!-- Menu Area -->
-                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mosh-navbar" aria-controls="mosh-navbar" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-
-                        <div class="collapse navbar-collapse justify-content-end" id="mosh-navbar">
-                            <ul class="navbar-nav animated" id="nav" style="margin:10px">
-                                <li>@Html.ActionLink("Fix Appointment", "FixAppointment", "User")</li>
-                                <li>@Html.ActionLink("View Appointment", "ViewAppointment", "User")</li>
-                                <li>@Html.ActionLink("Change Password", "ChangePassword", "Account")</li>
-                            </ul>
-                            @Html.Partial("_LoginPartial")
-
-                            
-                        </div>
-                    </nav>
-                </div>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li>@Html.ActionLink("Home", "Index", "User")</li>
+                    <li>@Html.ActionLink("Fix Appointment", "FixAppointment", "User")</li>
+                    <li>@Html.ActionLink("View Appointment", "ViewSetAppointmentDetails","User")</li>
+                </ul>
+                @Html.Partial("_LoginPartial")
             </div>
         </div>
     </div>
-    </header>
-    <!-- ***** Header Area End ***** -->
-    <!-- ***** Welcome Area Start ***** -->
-    <!-- ***** Welcome Area End ***** -->
-    <!-- ***** Service Area Start ***** -->
-    <br />
-    <div style="min-height:500px">
-        @RenderBody()
-    </div>
-    <br />
-    <div style="background-color:#25499f;height:70px">
-        <div style="margin-top:30px">CopyRight @@2018 yogeshgautam.com.np</div>
+    <div class="container body-content">
+        <div style="min-height:500px">
+            @RenderBody()
+        </div>
+        <hr />
+        <div class="navbar navbar-inverse navbar-fixed-bottom">
 
+            <footer style="color:white">
+                <p>&copy; @DateTime.Now.Year - TeamPlus</p>
+            </footer>
 
+        </div>
     </div>
 
-
-
-
-    <script src="~/Others/js/jquery-2.2.4.min.js"></script>
-    <!-- Popper js -->
-    <script src="~/Others/js/popper.min.js"></script>
-    <!-- Bootstrap js -->
-    <script src="~/Others/js/bootstrap.min.js"></script>
-    <!-- All Plugins js -->
-    <script src="~/Others/js/plugins.js"></script>
-    <!-- Active js -->
-
-    <script src="~/Others/js/active.js"></script>
-
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
 </body>
-
 </html>
-
-
-
-
-
-
-

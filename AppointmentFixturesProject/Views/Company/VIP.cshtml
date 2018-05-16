@@ -2,7 +2,7 @@
 
 @{
     ViewBag.Title = "VIP";
-    Layout = "~/Views/Shared/_CompanySharedView.cshtml";
+    Layout = "~/Views/Shared/_CompanyLayout.cshtml";
 }
 <div class="container">
     <h2>List Of VIP</h2>
@@ -53,7 +53,7 @@
                     <td>
                      
                         @Html.ActionLink("Details", "DetailsVIP", new { id = item.Id }, new { @class = "btn btn-info" })
-                        @Html.ActionLink("View Schedule", "ScheduleVIP", new { id = item.Id }, new { @class = "btn btn-primary" })
+                        @Html.ActionLink("View Schedule", "VIP", "ScheduleVIP", new { id = item.Id }, new { @class = "btn btn-primary" })
 
 
                     </td>

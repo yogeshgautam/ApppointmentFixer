@@ -27,5 +27,7 @@ namespace AppointmentFixturesProject.Controllers
 
             return View();
         }
+
+      
     }
 }

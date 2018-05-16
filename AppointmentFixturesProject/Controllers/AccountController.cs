@@ -100,7 +100,7 @@ namespace AppointmentFixturesProject.Controllers
                     }
                     else if((UserManager.IsInRole(user.Id, "Normal")))
                     {
-                        return RedirectToAction("Index", "Home");
+                        return RedirectToAction("FixAppointment", "User");
 
                     }
                     return RedirectToAction("Index", "Home", new { });
@@ -213,6 +213,14 @@ namespace AppointmentFixturesProject.Controllers
             BLL.BLLDepartment bllDepartment = new BLL.BLLDepartment();
             ViewBag.Department = bllDepartment.GetAllDepartment().Where(u => u.CompanyId == CompanyController.companyId).ToList();
 
+
+            //The Below codes are written to display the Company name in the navigation Bar
+            BLL.BLLCompany bllCompany = new BLL.BLLCompany();
+            string id = System.Web.HttpContext.Current.User.Identity.GetUserId();
+            var lst = bllCompany.GetAllCompany().Where(u => u.UserId == id).FirstOrDefault();   
+            ViewBag.Companyname = lst.Name;
+
+
             return View();
         }
 
@@ -224,6 +232,11 @@ namespace AppointmentFixturesProject.Controllers
         [HttpPost]
         public async Task<ActionResult> RegisterVIP(BO.BOVIPTable model)
         {
+
+            BLL.BLLDepartment bllDepartment = new BLL.BLLDepartment();
+            ViewBag.Department = bllDepartment.GetAllDepartment().Where(u => u.CompanyId == CompanyController.companyId).ToList();
+
+
             if (ModelState.IsValid)
             {
                 var user = new ApplicationUser { UserName = model.Email, Email = model.Email };
@@ -234,21 +247,31 @@ namespace AppointmentFixturesProject.Controllers
                     //Temp COde by yogesh gautam
                     var currentUser = UserManager.FindByName(user.UserName);
                     var roleresult = UserManager.AddToRole(currentUser.Id, "COMPANYVIP");
-                 //   await SignInManager.SignInAsync(user, isPersistent: false, rememberBrowser: false);
+                    //  await SignInManager.SignInAsync(user, isPersistent: false, rememberBrowser: false);
 
                     //creating VIP
-                    BLL.BLLVIP vlvip = new BLL.BLLVIP();
+                    string filename = "";
+                    HttpPostedFileBase fup = Request.Files[0];
+                    if (fup != null)
+                    {
+                        filename = fup.FileName;
+                        fup.SaveAs(Server.MapPath("~/Images/" + fup.FileName));
+
+                    }
+                    BLL.BLLVIP blvip = new BLL.BLLVIP();
+                    model.Photo = filename;
                     model.UserId = user.Id;
 
-                    vlvip.CreateVIP(model);
+                    blvip.CreateVIP(model);
 
-                    return RedirectToAction("Index", "Company");
+                    return RedirectToAction("VIP", "Company");
                 }
                 AddErrors(result);
             }
 
             // If we got this far, something failed, redisplay form
             return View(model);
+      
         }
 
         [Authorize(Roles = "Master")]
@@ -277,8 +300,8 @@ namespace AppointmentFixturesProject.Controllers
                     HttpPostedFileBase fup = Request.Files[0];
                     if (fup != null)
                     {
-                        filename = fup.FileName;
-                        fup.SaveAs(Server.MapPath("~/Images/" + fup.FileName));
+                        filename = Guid.NewGuid() + fup.FileName;
+                        fup.SaveAs(Server.MapPath("~/Images/" + (Guid.NewGuid()+fup.FileName)));
 
                     }
                     BLL.BLLCompany vlcompany = new BLL.BLLCompany();

@@ -1,3 +1,5 @@
+<<<<<<< HEAD
+=======
 D:\Users\yogesh\documents\visual studio 2013\Projects\AppointmentFixturesProject\DAL\bin\Debug\DAL.dll.config
 D:\Users\yogesh\documents\visual studio 2013\Projects\AppointmentFixturesProject\DAL\bin\Debug\DAL.dll
 D:\Users\yogesh\documents\visual studio 2013\Projects\AppointmentFixturesProject\DAL\bin\Debug\DAL.pdb
@@ -8,3 +10,41 @@ D:\Users\yogesh\documents\visual studio 2013\Projects\AppointmentFixturesProject
 D:\Users\yogesh\documents\visual studio 2013\Projects\AppointmentFixturesProject\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
 D:\Users\yogesh\documents\visual studio 2013\Projects\AppointmentFixturesProject\DAL\obj\Debug\DAL.dll
 D:\Users\yogesh\documents\visual studio 2013\Projects\AppointmentFixturesProject\DAL\obj\Debug\DAL.pdb
+<<<<<<< HEAD
+>>>>>>> bcc728bb558e224d7ad902b5f8d898ada0149495
+C:\Users\Manish\Desktop\ApppointmentFixer\DAL\bin\Debug\DAL.dll.config
+C:\Users\Manish\Desktop\ApppointmentFixer\DAL\bin\Debug\DAL.dll
+C:\Users\Manish\Desktop\ApppointmentFixer\DAL\bin\Debug\DAL.pdb
+C:\Users\Manish\Desktop\ApppointmentFixer\DAL\bin\Debug\EntityFramework.dll
+C:\Users\Manish\Desktop\ApppointmentFixer\DAL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Manish\Desktop\ApppointmentFixer\DAL\bin\Debug\EntityFramework.xml
+C:\Users\Manish\Desktop\ApppointmentFixer\DAL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Manish\Desktop\ApppointmentFixer\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+C:\Users\Manish\Desktop\ApppointmentFixer\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+C:\Users\Manish\Desktop\ApppointmentFixer\DAL\obj\Debug\DAL.dll
+C:\Users\Manish\Desktop\ApppointmentFixer\DAL\obj\Debug\DAL.pdb
+<<<<<<< HEAD
+D:\Users\yogesh\documents\visual studio 2013\Projects\AppointmentFixturesProject\DAL\bin\Debug\DAL.dll.config
+D:\Users\yogesh\documents\visual studio 2013\Projects\AppointmentFixturesProject\DAL\bin\Debug\DAL.dll
+D:\Users\yogesh\documents\visual studio 2013\Projects\AppointmentFixturesProject\DAL\bin\Debug\DAL.pdb
+D:\Users\yogesh\documents\visual studio 2013\Projects\AppointmentFixturesProject\DAL\bin\Debug\EntityFramework.dll
+D:\Users\yogesh\documents\visual studio 2013\Projects\AppointmentFixturesProject\DAL\bin\Debug\EntityFramework.SqlServer.dll
+D:\Users\yogesh\documents\visual studio 2013\Projects\AppointmentFixturesProject\DAL\bin\Debug\EntityFramework.xml
+D:\Users\yogesh\documents\visual studio 2013\Projects\AppointmentFixturesProject\DAL\bin\Debug\EntityFramework.SqlServer.xml
+D:\Users\yogesh\documents\visual studio 2013\Projects\AppointmentFixturesProject\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+D:\Users\yogesh\documents\visual studio 2013\Projects\AppointmentFixturesProject\DAL\obj\Debug\DAL.dll
+D:\Users\yogesh\documents\visual studio 2013\Projects\AppointmentFixturesProject\DAL\obj\Debug\DAL.pdb
+=======
+=======
+J:\M\Final Appointment Project\FInal Appointment Proooojet\ApppointmentFixer\DAL\bin\Debug\DAL.dll.config
+J:\M\Final Appointment Project\FInal Appointment Proooojet\ApppointmentFixer\DAL\bin\Debug\DAL.dll
+J:\M\Final Appointment Project\FInal Appointment Proooojet\ApppointmentFixer\DAL\bin\Debug\DAL.pdb
+J:\M\Final Appointment Project\FInal Appointment Proooojet\ApppointmentFixer\DAL\bin\Debug\EntityFramework.dll
+J:\M\Final Appointment Project\FInal Appointment Proooojet\ApppointmentFixer\DAL\bin\Debug\EntityFramework.SqlServer.dll
+J:\M\Final Appointment Project\FInal Appointment Proooojet\ApppointmentFixer\DAL\bin\Debug\EntityFramework.xml
+J:\M\Final Appointment Project\FInal Appointment Proooojet\ApppointmentFixer\DAL\bin\Debug\EntityFramework.SqlServer.xml
+J:\M\Final Appointment Project\FInal Appointment Proooojet\ApppointmentFixer\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+J:\M\Final Appointment Project\FInal Appointment Proooojet\ApppointmentFixer\DAL\obj\Debug\DAL.dll
+J:\M\Final Appointment Project\FInal Appointment Proooojet\ApppointmentFixer\DAL\obj\Debug\DAL.pdb
+>>>>>>> diwasDevelopment
+>>>>>>> bcc728bb558e224d7ad902b5f8d898ada0149495
