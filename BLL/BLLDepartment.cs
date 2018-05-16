@@ -81,5 +81,23 @@ namespace BLL
             //_db.tblDepartments.Remove(department);
             return _db.SaveChanges();
         }
+
+        public object getDepartmentByCountryId(int id)
+        {
+
+            List<BODepartment> lst = new List<BODepartment>();
+            var temp = _db.tblDepartments.Where(u => u.CompanyId == id).ToList();
+            foreach (var item in temp)
+            {
+                BODepartment bdepartment = new BODepartment();
+                bdepartment.Id = item.Id;
+                bdepartment.CompanyId = item.CompanyId;
+                bdepartment.Name = item.Name;
+                lst.Add(bdepartment);
+            }
+            return lst;
+        }
+
+
     }
 }

@@ -26,6 +26,7 @@ namespace AppointmentFixturesProject.Controllers
         BLLVIP bllvip = new BLLVIP();
         BLLUser bluser = new BLLUser();
         BLLAvailableTiming blavailable = new BLLAvailableTiming();
+        BLLMeetingFirst bllMeetingFirst = new BLLMeetingFirst();
 
          public static int companyId=1;
          public static string companyName = "";
@@ -210,5 +211,76 @@ namespace AppointmentFixturesProject.Controllers
              return View(lst);
              
          }
+
+
+        //prinsha parts
+         [HttpGet]
+         public ActionResult CreateMeetingOne()
+         {
+             BOMeetingFirst meeting = new BOMeetingFirst();
+             var temp = bllvip.GetAllVIP().Where(u => u.lstDepartment.CompanyId == companyId).ToList();
+             ViewBag.Company = temp;
+             return View(meeting);
+         }
+         [HttpPost]
+         public ActionResult CreateMeetingOne(BOMeetingFirst model)
+         {
+             var i = bllMeetingFirst.AddMeetingFirst(model);
+
+             ViewBag.Company = bllvip.GetAllVIP().Where(u => u.lstDepartment.CompanyId == companyId).ToList();
+             if (i > 0)
+             {
+                 ViewBag.Message = "Meeting has been created";
+             }
+             return View();
+         }
+         [HttpGet]
+         public ActionResult ViewMeetingOne()
+         {
+             //var ae = bllMeetingFirst.GetALLMeeting();
+             //foreach (var item in ae)
+             //{
+             //    var a = bllvip.GetVIPById(Convert.ToInt32(item.VIPuser));
+             //    item.VipName = a.FullName;
+             //}
+
+             return View();
+         }
+
+         public JsonResult List()
+         {
+             var ae = bllMeetingFirst.GetALLMeeting();
+             return Json(ae, JsonRequestBehavior.AllowGet);
+         }
+
+         public JsonResult UpdateMeetingOne(BOMeetingFirst model)
+         {
+             var ae = bllMeetingFirst.UpdateMeetingOne(model);
+             return Json(ae, JsonRequestBehavior.AllowGet);
+         }
+         public JsonResult Delete(int ID)
+         {
+             var ae = bllMeetingFirst.DeleteMeeting(ID);
+             return Json(ae, JsonRequestBehavior.AllowGet);
+         }
+         public JsonResult GetById(int id)
+         {
+             var ae = bllMeetingFirst.GetALLMeetingByID(id);
+             return Json(ae, JsonRequestBehavior.AllowGet);
+
+         }
+         public JsonResult Add(BOMeetingFirst model)
+         {
+             var ae = bllMeetingFirst.AddMeetingFirst(model);
+             return Json(ae, JsonRequestBehavior.AllowGet);
+         }
+
+       
+
+     
+
+      
+
+
     }
 }

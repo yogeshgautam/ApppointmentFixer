@@ -16,6 +16,8 @@ namespace AppointmentFixturesProject.Controllers
         BLLAvailableTiming blavailable = new BLLAvailableTiming();
         BLLVIP blvip = new BLLVIP();
         BLLCompany bllCompany = new BLLCompany();
+        BLLAppointmentDetails bllAppointment = new BLLAppointmentDetails();
+        BLLDateTime bllDateTime = new BLLDateTime();
 
         // GET: VIP
         BLLAvailableTiming available = new BLLAvailableTiming();
@@ -27,10 +29,12 @@ namespace AppointmentFixturesProject.Controllers
             var vip = blvip.GetAllVIP().Where(u => u.UserId == id).FirstOrDefault();
             VIPID = vip.Id;
         }
+
         public ActionResult Index()
         {
             BOVIPTable vip = blvip.GetVIPById(VIPID);
             return View(vip);
+           
         }
 
         [HttpPost]
@@ -45,32 +49,7 @@ namespace AppointmentFixturesProject.Controllers
             return View();
         }
 
-        [HttpPost]
-        public ActionResult FixAppointment(BOAvailableTiming model)
-        {
-            model.VipId= VIPID;
-            available.AddAvailableTiming(model);
-            return View();
-        }
-
-        public ActionResult ViewAppointment()
-        {
-            List<BOAvailableTiming> lst = blavailable.GetAvailableTimingByVIP(VIPID);
-            return View(lst);
-        }
-
-        public ActionResult EditAppointmentTiming(int id)
-        {
-           
-            return View();
-
-        }
-
-        public ActionResult DeleteAppointmentTiming(int id)
-        {
-            blavailable.DeleteAvailableTimings(id);
-            return RedirectToAction("ViewAppointment");
-        }
+      
 
         //Notification Message
         BLLAppointmentDetails bllappointmentdetails = new BLLAppointmentDetails();
@@ -79,6 +58,97 @@ namespace AppointmentFixturesProject.Controllers
         {
             return Json(bllappointmentdetails.GetAllAppointment(), JsonRequestBehavior.AllowGet);
         }
+
+        //diwas part
+
+        public JsonResult List()
+        {
+            var appointmentLst = blavailable.GetAvailableTimingByVIP(VIPID);
+            return Json(appointmentLst, JsonRequestBehavior.AllowGet);
+        }
+
+        public JsonResult Add(BOAvailableTiming model)
+        {
+            model.VipId = VIPID;
+            int i = blavailable.AddAvailableTiming(model);
+            return Json(i, JsonRequestBehavior.AllowGet);
+        }
+
+        public JsonResult Update(BOAvailableTiming model)
+        {
+            model.VipId = VIPID;
+            var appointment = blavailable.UpdateAvailableTiming(model);
+            return Json(appointment, JsonRequestBehavior.AllowGet);
+        }
+
+        public JsonResult GetbyID(int Id)
+        {
+            var appoint = blavailable.GetIndividualAvailableTiming(Id);
+            return Json(appoint, JsonRequestBehavior.AllowGet);
+        }
+
+        public JsonResult Delete(int ID)
+        {
+            var temp = blavailable.DeleteAvailableTimings(ID);
+            return Json(temp, JsonRequestBehavior.AllowGet);
+        }
+
+
+
+
+        [HttpPost]
+        public ActionResult FixAppointment(BOAvailableTiming model)
+        {
+            if (ModelState.IsValid)
+            {
+                model.VipId = VIPID;
+                blavailable.AddAvailableTiming(model);
+
+            }
+            return View();
+
+        }
+
+
+        //public ActionResult ViewAppointment()
+        //{
+        //    string email = System.Web.HttpContext.Current.User.Identity.GetUserName();
+        //    var temp = blavailable.getBookAppointmentByUser(email);
+
+
+        //    return View(temp);
+        //}
+
+
+        public ActionResult UpdatingAppointment(int id)
+        {
+            var temp = bllDateTime.GetAllDateTime();
+            var bDateTime = temp.Where(u => u.Id == id).SingleOrDefault();
+            return View(bDateTime);
+        }
+
+        [HttpPost]
+        public ActionResult UpdatingAppointment(BODateTime bDateTime)
+        {
+            if (ModelState.IsValid)
+            {
+                int i = bllDateTime.UpdateDateTime(bDateTime);
+                if (i > 0)
+                {
+                    return RedirectToAction("ViewAppointment");
+                }
+                else
+                {
+                    return View();
+                }
+            }
+            else
+            {
+                return View();
+            }
+
+        }
+
 
 
     }

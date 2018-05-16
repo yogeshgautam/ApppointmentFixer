@@ -24,7 +24,6 @@ namespace BLL
                 lst.Add(users);
             }
             return lst;
-            
         }
 
   

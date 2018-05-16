@@ -4,7 +4,7 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-      <Schema Namespace="AppointmentDatabaseModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+    <Schema Namespace="AppointmentDatabaseModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
         <EntityType Name="__MigrationHistory">
           <Key>
             <PropertyRef Name="MigrationId" />
@@ -86,15 +86,16 @@
           <Property Name="AppointmentTo" Type="nvarchar(max)" />
           <Property Name="DateTimeId" Type="int" />
           <Property Name="Details" Type="nvarchar(max)" />
+          <Property Name="status" Type="nvarchar" MaxLength="50" />
         </EntityType>
         <EntityType Name="tblAvailableTiming">
           <Key>
             <PropertyRef Name="Id" />
           </Key>
           <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-          <Property Name="Date" Type="date" />
-          <Property Name="StartTime" Type="time" Precision="7" />
-          <Property Name="EndTime" Type="time" Precision="7" />
+          <Property Name="Date" Type="nvarchar" MaxLength="50" />
+          <Property Name="StartTime" Type="nvarchar" MaxLength="50" />
+          <Property Name="EndTime" Type="nvarchar" MaxLength="50" />
           <Property Name="IsAvailable" Type="bit" />
           <Property Name="VipId" Type="int" />
         </EntityType>
@@ -119,10 +120,9 @@
             <PropertyRef Name="Id" />
           </Key>
           <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-          <Property Name="AppointmentId" Type="int" />
           <Property Name="Date" Type="date" />
-          <Property Name="FromTime" Type="time" Precision="7" />
-          <Property Name="ToTime" Type="time" Precision="7" />
+          <Property Name="FromTime" Type="nvarchar" MaxLength="50" />
+          <Property Name="ToTime" Type="nvarchar" MaxLength="50" />
           <Property Name="IsCanceled" Type="bit" />
         </EntityType>
         <EntityType Name="tblDepartment">
@@ -140,14 +140,16 @@
           <Property Name="CreatedAt" Type="nvarchar" MaxLength="50" />
           <Property Name="LastUpdated" Type="nvarchar" MaxLength="50" />
         </EntityType>
-        <EntityType Name="tblUser">
+        <EntityType Name="tblMeetingFirst">
           <Key>
-            <PropertyRef Name="Id" />
+            <PropertyRef Name="ID" />
           </Key>
-          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-          <Property Name="Username" Type="nvarchar(max)" />
-          <Property Name="Password" Type="nvarchar(max)" />
-          <Property Name="Role" Type="nvarchar" MaxLength="50" />
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="VIPUser" Type="nvarchar" MaxLength="50" />
+          <Property Name="Users" Type="nvarchar" MaxLength="50" />
+          <Property Name="StartTime" Type="nvarchar" MaxLength="50" />
+          <Property Name="EndTime" Type="nvarchar" MaxLength="50" />
+          <Property Name="Date" Type="date" />
         </EntityType>
         <EntityType Name="tblVIPUser">
           <Key>
@@ -260,18 +262,6 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK_tblDateTime_tblAppointment">
-          <End Role="tblAppointment" Type="Self.tblAppointment" Multiplicity="0..1" />
-          <End Role="tblDateTime" Type="Self.tblDateTime" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="tblAppointment">
-              <PropertyRef Name="Id" />
-            </Principal>
-            <Dependent Role="tblDateTime">
-              <PropertyRef Name="AppointmentId" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
         <Association Name="FK_tblDepartment_tblCompanyDetails">
           <End Role="tblCompanyDetails" Type="Self.tblCompanyDetails" Multiplicity="0..1" />
           <End Role="tblDepartment" Type="Self.tblDepartment" Multiplicity="*" />
@@ -309,7 +299,7 @@
           <EntitySet Name="tblCompanyDetails" EntityType="Self.tblCompanyDetails" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="tblDateTime" EntityType="Self.tblDateTime" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="tblDepartment" EntityType="Self.tblDepartment" Schema="dbo" store:Type="Tables" />
-          <EntitySet Name="tblUser" EntityType="Self.tblUser" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="tblMeetingFirst" EntityType="Self.tblMeetingFirst" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="tblVIPUser" EntityType="Self.tblVIPUser" Schema="dbo" store:Type="Tables" />
           <AssociationSet Name="FK_dbo_AspNetUserClaims_dbo_AspNetUsers_UserId" Association="Self.FK_dbo_AspNetUserClaims_dbo_AspNetUsers_UserId">
             <End Role="AspNetUsers" EntitySet="AspNetUsers" />
@@ -339,10 +329,6 @@
             <End Role="tblVIPUser" EntitySet="tblVIPUser" />
             <End Role="tblAvailableTiming" EntitySet="tblAvailableTiming" />
           </AssociationSet>
-          <AssociationSet Name="FK_tblDateTime_tblAppointment" Association="Self.FK_tblDateTime_tblAppointment">
-            <End Role="tblAppointment" EntitySet="tblAppointment" />
-            <End Role="tblDateTime" EntitySet="tblDateTime" />
-          </AssociationSet>
           <AssociationSet Name="FK_tblDepartment_tblCompanyDetails" Association="Self.FK_tblDepartment_tblCompanyDetails">
             <End Role="tblCompanyDetails" EntitySet="tblCompanyDetails" />
             <End Role="tblDepartment" EntitySet="tblDepartment" />
@@ -352,8 +338,7 @@
             <End Role="tblVIPUser" EntitySet="tblVIPUser" />
           </AssociationSet>
         </EntityContainer>
-      </Schema>
-    </edmx:StorageModels>
+      </Schema></edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
       <Schema Namespace="AppointmentDatabaseModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
@@ -436,18 +421,18 @@
           <Property Name="AppointmentTo" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
           <Property Name="DateTimeId" Type="Int32" />
           <Property Name="Details" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="status" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
           <NavigationProperty Name="tblDateTime" Relationship="Self.FK_tblAppointment_tblDateTime" FromRole="tblAppointment" ToRole="tblDateTime" />
           <NavigationProperty Name="tblDepartment" Relationship="Self.FK_tblAppointment_tblDepartment" FromRole="tblAppointment" ToRole="tblDepartment" />
-          <NavigationProperty Name="tblDateTimes" Relationship="Self.FK_tblDateTime_tblAppointment" FromRole="tblAppointment" ToRole="tblDateTime" />
         </EntityType>
         <EntityType Name="tblAvailableTiming">
           <Key>
             <PropertyRef Name="Id" />
           </Key>
           <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-          <Property Name="Date" Type="DateTime" Precision="0" />
-          <Property Name="StartTime" Type="Time" Precision="7" />
-          <Property Name="EndTime" Type="Time" Precision="7" />
+          <Property Name="Date" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="StartTime" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="EndTime" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
           <Property Name="IsAvailable" Type="Boolean" />
           <Property Name="VipId" Type="Int32" />
           <NavigationProperty Name="tblVIPUser" Relationship="Self.FK_tblAvailableTiming_tblVIPUser" FromRole="tblAvailableTiming" ToRole="tblVIPUser" />
@@ -474,13 +459,11 @@
             <PropertyRef Name="Id" />
           </Key>
           <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-          <Property Name="AppointmentId" Type="Int32" />
           <Property Name="Date" Type="DateTime" Precision="0" />
-          <Property Name="FromTime" Type="Time" Precision="7" />
-          <Property Name="ToTime" Type="Time" Precision="7" />
+          <Property Name="FromTime" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="ToTime" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
           <Property Name="IsCanceled" Type="Boolean" />
           <NavigationProperty Name="tblAppointments" Relationship="Self.FK_tblAppointment_tblDateTime" FromRole="tblDateTime" ToRole="tblAppointment" />
-          <NavigationProperty Name="tblAppointment" Relationship="Self.FK_tblDateTime_tblAppointment" FromRole="tblDateTime" ToRole="tblAppointment" />
         </EntityType>
         <EntityType Name="tblDepartment">
           <Key>
@@ -499,15 +482,6 @@
           <NavigationProperty Name="tblAppointments" Relationship="Self.FK_tblAppointment_tblDepartment" FromRole="tblDepartment" ToRole="tblAppointment" />
           <NavigationProperty Name="tblCompanyDetail" Relationship="Self.FK_tblDepartment_tblCompanyDetails" FromRole="tblDepartment" ToRole="tblCompanyDetails" />
           <NavigationProperty Name="tblVIPUsers" Relationship="Self.FK_tblVIPUser_tblDepartment" FromRole="tblDepartment" ToRole="tblVIPUser" />
-        </EntityType>
-        <EntityType Name="tblUser">
-          <Key>
-            <PropertyRef Name="Id" />
-          </Key>
-          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-          <Property Name="Username" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
-          <Property Name="Password" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
-          <Property Name="Role" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
         </EntityType>
         <EntityType Name="tblVIPUser">
           <Key>
@@ -582,18 +556,6 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK_tblDateTime_tblAppointment">
-          <End Role="tblAppointment" Type="Self.tblAppointment" Multiplicity="0..1" />
-          <End Role="tblDateTime" Type="Self.tblDateTime" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="tblAppointment">
-              <PropertyRef Name="Id" />
-            </Principal>
-            <Dependent Role="tblDateTime">
-              <PropertyRef Name="AppointmentId" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
         <Association Name="FK_tblAvailableTiming_tblVIPUser">
           <End Role="tblVIPUser" Type="Self.tblVIPUser" Multiplicity="0..1" />
           <End Role="tblAvailableTiming" Type="Self.tblAvailableTiming" Multiplicity="*" />
@@ -646,7 +608,6 @@
           <EntitySet Name="tblCompanyDetails" EntityType="Self.tblCompanyDetail" />
           <EntitySet Name="tblDateTimes" EntityType="Self.tblDateTime" />
           <EntitySet Name="tblDepartments" EntityType="Self.tblDepartment" />
-          <EntitySet Name="tblUsers" EntityType="Self.tblUser" />
           <EntitySet Name="tblVIPUsers" EntityType="Self.tblVIPUser" />
           <AssociationSet Name="FK_dbo_AspNetUserClaims_dbo_AspNetUsers_UserId" Association="Self.FK_dbo_AspNetUserClaims_dbo_AspNetUsers_UserId">
             <End Role="AspNetUsers" EntitySet="AspNetUsers" />
@@ -664,10 +625,6 @@
             <End Role="tblDepartment" EntitySet="tblDepartments" />
             <End Role="tblAppointment" EntitySet="tblAppointments" />
           </AssociationSet>
-          <AssociationSet Name="FK_tblDateTime_tblAppointment" Association="Self.FK_tblDateTime_tblAppointment">
-            <End Role="tblAppointment" EntitySet="tblAppointments" />
-            <End Role="tblDateTime" EntitySet="tblDateTimes" />
-          </AssociationSet>
           <AssociationSet Name="FK_tblAvailableTiming_tblVIPUser" Association="Self.FK_tblAvailableTiming_tblVIPUser">
             <End Role="tblVIPUser" EntitySet="tblVIPUsers" />
             <End Role="tblAvailableTiming" EntitySet="tblAvailableTimings" />
@@ -684,7 +641,19 @@
             <End Role="AspNetRoles" EntitySet="AspNetRoles" />
             <End Role="AspNetUsers" EntitySet="AspNetUsers" />
           </AssociationSet>
+          <EntitySet Name="tblMeetingFirsts" EntityType="AppointmentDatabaseModel.tblMeetingFirst" />
         </EntityContainer>
+        <EntityType Name="tblMeetingFirst">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="VIPUser" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Users" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="StartTime" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="EndTime" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Date" Type="DateTime" Precision="0" />
+        </EntityType>
       </Schema>
     </edmx:ConceptualModels>
     <!-- C-S mapping content -->
@@ -766,6 +735,7 @@
                 <ScalarProperty Name="AppointmentTo" ColumnName="AppointmentTo" />
                 <ScalarProperty Name="DateTimeId" ColumnName="DateTimeId" />
                 <ScalarProperty Name="Details" ColumnName="Details" />
+                <ScalarProperty Name="status" ColumnName="status" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
@@ -802,7 +772,6 @@
             <EntityTypeMapping TypeName="AppointmentDatabaseModel.tblDateTime">
               <MappingFragment StoreEntitySet="tblDateTime">
                 <ScalarProperty Name="Id" ColumnName="Id" />
-                <ScalarProperty Name="AppointmentId" ColumnName="AppointmentId" />
                 <ScalarProperty Name="Date" ColumnName="Date" />
                 <ScalarProperty Name="FromTime" ColumnName="FromTime" />
                 <ScalarProperty Name="ToTime" ColumnName="ToTime" />
@@ -823,16 +792,6 @@
                 <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
                 <ScalarProperty Name="CreatedAt" ColumnName="CreatedAt" />
                 <ScalarProperty Name="LastUpdated" ColumnName="LastUpdated" />
-              </MappingFragment>
-            </EntityTypeMapping>
-          </EntitySetMapping>
-          <EntitySetMapping Name="tblUsers">
-            <EntityTypeMapping TypeName="AppointmentDatabaseModel.tblUser">
-              <MappingFragment StoreEntitySet="tblUser">
-                <ScalarProperty Name="Id" ColumnName="Id" />
-                <ScalarProperty Name="Username" ColumnName="Username" />
-                <ScalarProperty Name="Password" ColumnName="Password" />
-                <ScalarProperty Name="Role" ColumnName="Role" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
@@ -864,6 +823,18 @@
               <ScalarProperty Name="Id" ColumnName="UserId" />
             </EndProperty>
           </AssociationSetMapping>
+          <EntitySetMapping Name="tblMeetingFirsts">
+            <EntityTypeMapping TypeName="AppointmentDatabaseModel.tblMeetingFirst">
+              <MappingFragment StoreEntitySet="tblMeetingFirst">
+                <ScalarProperty Name="Date" ColumnName="Date" />
+                <ScalarProperty Name="EndTime" ColumnName="EndTime" />
+                <ScalarProperty Name="StartTime" ColumnName="StartTime" />
+                <ScalarProperty Name="Users" ColumnName="Users" />
+                <ScalarProperty Name="VIPUser" ColumnName="VIPUser" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
         </EntityContainerMapping>
       </Mapping>
     </edmx:Mappings>

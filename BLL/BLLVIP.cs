@@ -100,5 +100,21 @@ namespace BLL
             //_db.tblVIPUsers.Remove(vip);
             return _db.SaveChanges();
         }
+
+        public List<BOVIPTable> GetAllVIPByDepartmentId(int id)
+        {
+            List<BOVIPTable> lst = new List<BOVIPTable>();
+            var temp = _db.tblVIPUsers.Where(u => u.IsDeleted == false && u.DepartmentId == id).ToList();
+            foreach (var model in temp)
+            {
+                BOVIPTable vip = new BOVIPTable();
+                vip.Id = model.Id;
+                vip.UserId = model.UserId;
+                vip.FullName = model.FullName;
+                lst.Add(vip);
+            }
+            return lst;
+        }
+
     }
 }

@@ -13,6 +13,9 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
             type="text/javascript"></script>
 
+
+
+
     <script type="text/javascript">
 
     $(document).ready(function () {
@@ -66,12 +69,10 @@
                 </button>
                 @Html.ActionLink("Company Name", "Index", "VIP", new { area = "" }, new { @class = "navbar-brand" })
             </div>
-            <div class="navbar-collapse collapse">
+             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
                     <li>@Html.ActionLink("Home", "Index", "VIP")</li>
                     <li>@Html.ActionLink("Fix Appointment Timing", "FixAppointment", "VIP")</li>
-                    <li>@Html.ActionLink("View Appointments Timing", "ViewAppointment", "VIP")</li>
-                   
                 </ul>
 
                 <ul class="nav navbar-nav navbar-right">
@@ -79,10 +80,9 @@
                         <a class="dropdown-toggle" data-toggle="dropdown"> Notification (<span id="countNotify">0</span>) <span class="caret"></span></a>
                         <ul class="dropdown-menu" id="myNotifyList"></ul>
                     </li>
-                    @Html.Partial("_LoginPartial")
                 </ul>
-               
-            </div>
+                @Html.Partial("_LoginPartial")
+</div>
         </div>
     </div>
     <div class="container body-content">

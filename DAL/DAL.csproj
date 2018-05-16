@@ -99,7 +99,7 @@
     <Compile Include="tblDepartment.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
-    <Compile Include="tblUser.cs">
+    <Compile Include="tblMeetingFirst.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="tblVIPUser.cs">

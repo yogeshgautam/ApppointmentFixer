@@ -16,10 +16,12 @@ namespace BO
         public Nullable<System.DateTime> Date { get; set; }
 
         [Required]
-        public Nullable<System.TimeSpan> FromTime { get; set; }
+        public string FromTime { get; set; }
 
         [Required]
-        public Nullable<System.TimeSpan> ToTime { get; set; }
+        public string ToTime { get; set; }
+
+      
         public Nullable<bool> IsCanceled { get; set; }
     }
 }
