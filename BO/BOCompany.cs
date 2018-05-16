@@ -11,32 +11,64 @@ namespace BO
     {
         public int Id { get; set; }
 
-        [Required]
+<<<<<<< HEAD
+       
+=======
+
+        
+        
+
+
+        [Required(ErrorMessage = " Company Name is Required")]
+        [StringLength(3, ErrorMessage = "Name Must Be at least Three Characters")]
+>>>>>>> a6e5fc65e27473bca30aedff8c6f742c84974d8f
         public string Name { get; set; }
 
-        [Required]
+     
         public string Address { get; set; }
 
-        [Required]
+     
         public string Photo { get; set; }
         public string UserId { get; set; }
         public Nullable<bool> IsDeleted { get; set; }
 
+
+<<<<<<< HEAD
+=======
         [Required]
         [EmailAddress]
-        public string Email { get; set; }
 
         [Required]
+
+>>>>>>> a6e5fc65e27473bca30aedff8c6f742c84974d8f
+        public string Email { get; set; }
+
+
         public string Description { get; set; }
+        [Required]
         public string Phone { get; set; }
         public string CreatedAt { get; set; }
         public string LastUpdated { get; set; }
 
 
+<<<<<<< HEAD
+ 
+        public string password { get; set; }
+
+      
+=======
+
         [Required]
         public string password { get; set; }
 
         [Compare("password")]
+
+        [Required]
+        public string password { get; set; }
+        [Required]
+        [Compare("password", ErrorMessage = "Password Mismatch")]
+
+>>>>>>> a6e5fc65e27473bca30aedff8c6f742c84974d8f
         public string ConfirmPassword { get; set; }
 
         public BOCompany()

@@ -1,8 +1,18 @@
 ﻿@model BO.BOVIPTable
 
 @{
+<<<<<<< HEAD
     ViewBag.Title = "Index";
     Layout = "~/Views/Shared/_VIPSharedView.cshtml";
+=======
+<<<<<<< HEAD
+    ViewBag.Title = "FixAppointment";
+    Layout = "~/Views/Shared/_VipLayout.cshtml";
+=======
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_VIPSharedView.cshtml";
+>>>>>>> diwasDevelopment
+>>>>>>> bcc728bb558e224d7ad902b5f8d898ada0149495
 }
 @*<script src="~/Scripts/jquery-1.10.2.min.js"></script>
     <script src="~/Scripts/bootstrap.min.js"></script>
@@ -10,7 +20,12 @@
     <script src="~/Scripts/jquery.unobtrusive-ajax.min.js"></script>
     <script src="~/Scripts/employee.js"></script>*@
 
+<script>
+     $( function() {
+         $("#Date").datepicker();
+     });
 
+<<<<<<< HEAD
 
 <script>
      $( function() {
@@ -55,6 +70,51 @@
             </thead>
             <tbody class="tbody"></tbody>
 
+=======
+<<<<<<< HEAD
+<br/>
+<h2>Fix Appointment</h2>
+=======
+     //$("#StartTime").timepicker();
+
+</script>
+>>>>>>> diwasDevelopment
+
+
+<br />
+<br />
+<br />
+<div>
+    <div class="container">
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal" onclick="clearTextBox();">Add New Appointment</button><br /><br />
+        <table class="table table-hover table-bordered  ">
+            <thead>
+                <tr class="success">
+                    <th>
+                        ID
+                    </th>
+                    <th>
+                        Date
+                    </th>
+                    <th>
+                        StartTime
+                    </th>
+                    <th>
+                        EndTime
+                    </th>
+                    <th>
+                        IsAvailable
+                    </th>
+
+                    <th>
+                        Action
+                    </th>
+
+                </tr>
+            </thead>
+            <tbody class="tbody"></tbody>
+
+>>>>>>> bcc728bb558e224d7ad902b5f8d898ada0149495
         </table>
     </div>
 

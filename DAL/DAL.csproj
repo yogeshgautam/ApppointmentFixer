@@ -99,9 +99,12 @@
     <Compile Include="tblDepartment.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
+<<<<<<< HEAD
     <Compile Include="tblMeetingFirst.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
+=======
+>>>>>>> bcc728bb558e224d7ad902b5f8d898ada0149495
     <Compile Include="tblVIPUser.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>

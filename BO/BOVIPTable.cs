@@ -18,12 +18,27 @@ namespace BO
      
         public string Designation { get; set; }
 
+
+
+
         [Required]
         public string Phone { get; set; }
 
+<<<<<<< HEAD
     
         public string Email { get; set; }
 
+=======
+        [Required]
+
+        [EmailAddress]
+        public string Email { get; set; }
+
+
+
+
+        [Required]
+>>>>>>> bcc728bb558e224d7ad902b5f8d898ada0149495
         public string Address1 { get; set; }
         public string Address2 { get; set; }
         public Nullable<bool> IsDeleted { get; set; }
@@ -37,7 +52,16 @@ namespace BO
 
         public string Password { get; set; }
 
+<<<<<<< HEAD
         
+=======
+ 
+        [Compare("Password")]
+
+        [Required]
+        [Compare("Password", ErrorMessage = "Password Mismatch")]
+
+>>>>>>> bcc728bb558e224d7ad902b5f8d898ada0149495
         public string ConfirmPassword { get; set; }
         public BODepartment lstDepartment { get; set; }
     }

@@ -40,7 +40,11 @@ namespace AppointmentFixturesProject.Controllers
         // GET: User
         public ActionResult Index()
         {
+<<<<<<< HEAD
 
+=======
+            
+>>>>>>> bcc728bb558e224d7ad902b5f8d898ada0149495
             return View();
         }
 
@@ -101,7 +105,11 @@ namespace AppointmentFixturesProject.Controllers
             var dateId = fc["dropdownDate"].ToString();
             var dateValue = bllAvailable.GetAllAvailableTiming().Where(u => u.Id == Convert.ToInt32(dateId)).SingleOrDefault().Date; ////date
 
+<<<<<<< HEAD
             bDateTime.Date = Convert.ToDateTime(dateValue);
+=======
+            bDateTime.Date =Convert.ToDateTime(dateValue);
+>>>>>>> bcc728bb558e224d7ad902b5f8d898ada0149495
             //string resultString = Regex.Match(bDateTime.Date.ToString(), @"\d{4}-\d{2}-\d{2}").Value;
             bDateTime.FromTime = fc["dropdownInterval"].ToString();
             bDateTime.ToTime = endTime;
@@ -150,10 +158,17 @@ namespace AppointmentFixturesProject.Controllers
         public ActionResult DeleteUserAppointment(BOVipViewModel model)
         {
             int i = bllDateTime.DeleteDateTime(model.Id);
+<<<<<<< HEAD
             if (i > 0)
             {
                 int j = bllAppointment.DeleteAppointmentOnTheBasisOfDeletedDateTime(model.Id);
                 if (j > 0)
+=======
+            if (i>0)
+            {
+              int j=  bllAppointment.DeleteAppointmentOnTheBasisOfDeletedDateTime(model.Id);
+                if (j>0)
+>>>>>>> bcc728bb558e224d7ad902b5f8d898ada0149495
                 {
                     ViewBag.AppointmentDetails = "Successfully Deleted user data";
                 }

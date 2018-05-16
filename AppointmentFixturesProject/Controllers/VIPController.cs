@@ -7,6 +7,7 @@ using BO;
 using BLL;
 using Microsoft.AspNet.Identity;
 
+
 namespace AppointmentFixturesProject.Controllers
 {
     [Authorize(Roles = "COMPANYVIP")]
@@ -49,6 +50,7 @@ namespace AppointmentFixturesProject.Controllers
             return View();
         }
 
+<<<<<<< HEAD
       
 
         //Notification Message
@@ -106,9 +108,75 @@ namespace AppointmentFixturesProject.Controllers
 
             }
             return View();
-
+=======
+        public JsonResult List()
+        {
+            var appointmentLst = blavailable.GetAvailableTimingByVIP(VIPID);
+            return Json(appointmentLst, JsonRequestBehavior.AllowGet);
         }
 
+        public JsonResult Add(BOAvailableTiming model)
+        {
+            model.VipId = VIPID;
+            int i = available.AddAvailableTiming(model);
+            return Json(i, JsonRequestBehavior.AllowGet);
+        }
+
+        public JsonResult Update(BOAvailableTiming model)
+        {
+            model.VipId = VIPID;
+            var appointment = available.UpdateAvailableTiming(model);
+            return Json(appointment, JsonRequestBehavior.AllowGet);
+        }
+
+        public JsonResult GetbyID(int Id)
+        {
+            var appoint = available.GetIndividualAvailableTiming(Id);
+            return Json(appoint, JsonRequestBehavior.AllowGet);
+        }
+
+        public JsonResult Delete(int ID)
+        {
+            var temp = available.DeleteAvailableTimings(ID);
+            return Json(temp, JsonRequestBehavior.AllowGet);
+        }
+
+
+
+
+        [HttpPost]
+        public ActionResult FixAppointment(BOAvailableTiming model)
+        {
+            if (ModelState.IsValid)
+            {
+                model.VipId = VIPID;
+                available.AddAvailableTiming(model);
+                
+            }
+            return View();
+            
+        }
+
+
+        public ActionResult ViewAppointment()
+        {
+            string email = System.Web.HttpContext.Current.User.Identity.GetUserName();
+            var temp = bllAppointment.getBookAppointmentByUser(email);
+            
+            
+            return View(temp);
+        }
+
+>>>>>>> bcc728bb558e224d7ad902b5f8d898ada0149495
+
+        public ActionResult UpdatingAppointment(int id)
+        {
+            var temp = bllDateTime.GetAllDateTime();
+            var bDateTime = temp.Where(u => u.Id == id).SingleOrDefault();
+            return View(bDateTime);
+        }
+
+<<<<<<< HEAD
 
         //public ActionResult ViewAppointment()
         //{
@@ -129,6 +197,35 @@ namespace AppointmentFixturesProject.Controllers
 
         [HttpPost]
         public ActionResult UpdatingAppointment(BODateTime bDateTime)
+=======
+        [HttpPost]
+        public ActionResult UpdatingAppointment(BODateTime bDateTime)
+        {
+            if (ModelState.IsValid)
+            {
+                int i = bllDateTime.UpdateDateTime(bDateTime);
+                if (i > 0)
+                {
+                    return RedirectToAction("ViewAppointment");
+                }
+                else
+                {
+                    return View();
+                }
+            }
+            else
+            {
+                return View();
+            }
+            
+        }
+
+<<<<<<< HEAD
+        //Notification Message
+        BLLAppointmentDetails bllappointmentdetails = new BLLAppointmentDetails();
+        [HttpGet]
+        public JsonResult GetNotifications()
+>>>>>>> bcc728bb558e224d7ad902b5f8d898ada0149495
         {
             if (ModelState.IsValid)
             {
@@ -148,8 +245,12 @@ namespace AppointmentFixturesProject.Controllers
             }
 
         }
+=======
+       
+        
+    }
+>>>>>>> diwasDevelopment
 
 
 
     }
-}
