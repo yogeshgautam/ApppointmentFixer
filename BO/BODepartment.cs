@@ -11,7 +11,7 @@ namespace BO
     {
         public int Id { get; set; }
 
-        [Required]
+       
         public Nullable<int> CompanyId { get; set; }
 
          [Required]

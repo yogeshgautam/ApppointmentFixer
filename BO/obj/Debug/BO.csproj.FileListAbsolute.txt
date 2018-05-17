@@ -18,3 +18,14 @@ D:\Users\yogesh\documents\visual studio 2013\Projects\AppointmentFixturesProject
 D:\Users\yogesh\documents\visual studio 2013\Projects\AppointmentFixturesProject\BO\bin\Debug\EntityFramework.SqlServer.xml
 D:\Users\yogesh\documents\visual studio 2013\Projects\AppointmentFixturesProject\BO\obj\Debug\BO.dll
 D:\Users\yogesh\documents\visual studio 2013\Projects\AppointmentFixturesProject\BO\obj\Debug\BO.pdb
+D:\Users\yogesh\documents\visual studio 2013\Projects\AppointmentFixturesProject\BO\obj\Debug\BO.csprojResolveAssemblyReference.cache
+E:\Softtech\Meeting Project\Initial Phase\AppointmentFixturesProject\BO\bin\Debug\BO.dll.config
+E:\Softtech\Meeting Project\Initial Phase\AppointmentFixturesProject\BO\bin\Debug\BO.dll
+E:\Softtech\Meeting Project\Initial Phase\AppointmentFixturesProject\BO\bin\Debug\BO.pdb
+E:\Softtech\Meeting Project\Initial Phase\AppointmentFixturesProject\BO\bin\Debug\EntityFramework.dll
+E:\Softtech\Meeting Project\Initial Phase\AppointmentFixturesProject\BO\bin\Debug\EntityFramework.SqlServer.dll
+E:\Softtech\Meeting Project\Initial Phase\AppointmentFixturesProject\BO\bin\Debug\EntityFramework.xml
+E:\Softtech\Meeting Project\Initial Phase\AppointmentFixturesProject\BO\bin\Debug\EntityFramework.SqlServer.xml
+E:\Softtech\Meeting Project\Initial Phase\AppointmentFixturesProject\BO\obj\Debug\BO.csprojResolveAssemblyReference.cache
+E:\Softtech\Meeting Project\Initial Phase\AppointmentFixturesProject\BO\obj\Debug\BO.dll
+E:\Softtech\Meeting Project\Initial Phase\AppointmentFixturesProject\BO\obj\Debug\BO.pdb

@@ -85,6 +85,7 @@ namespace AppointmentFixturesProject.Controllers
                 {
                     ViewBag.Message = "There was a problem Creating Department. Please Contact Administrator for Support.";
                 }
+                return RedirectToAction("Index");
             }
             else
             {
@@ -225,12 +226,15 @@ namespace AppointmentFixturesProject.Controllers
          [HttpPost]
          public ActionResult CreateMeetingOne(BOMeetingFirst model)
          {
-             var i = bllMeetingFirst.AddMeetingFirst(model);
-
              ViewBag.Company = bllvip.GetAllVIP().Where(u => u.lstDepartment.CompanyId == companyId).ToList();
-             if (i > 0)
+             if (ModelState.IsValid)
              {
-                 ViewBag.Message = "Meeting has been created";
+                 var i = bllMeetingFirst.AddMeetingFirst(model);
+                 if (i > 0)
+                 {
+                     ViewBag.Message = "Meeting has been created";
+                 }
+                 return RedirectToAction("ViewMeetingOne");
              }
              return View();
          }

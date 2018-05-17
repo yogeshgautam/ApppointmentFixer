@@ -29,3 +29,17 @@ D:\Users\yogesh\documents\visual studio 2013\Projects\AppointmentFixturesProject
 D:\Users\yogesh\documents\visual studio 2013\Projects\AppointmentFixturesProject\BLL\obj\Debug\BLL.csprojResolveAssemblyReference.cache
 D:\Users\yogesh\documents\visual studio 2013\Projects\AppointmentFixturesProject\BLL\obj\Debug\BLL.dll
 D:\Users\yogesh\documents\visual studio 2013\Projects\AppointmentFixturesProject\BLL\obj\Debug\BLL.pdb
+E:\Softtech\Meeting Project\Initial Phase\AppointmentFixturesProject\BLL\bin\Debug\BLL.dll.config
+E:\Softtech\Meeting Project\Initial Phase\AppointmentFixturesProject\BLL\bin\Debug\BLL.dll
+E:\Softtech\Meeting Project\Initial Phase\AppointmentFixturesProject\BLL\bin\Debug\BLL.pdb
+E:\Softtech\Meeting Project\Initial Phase\AppointmentFixturesProject\BLL\bin\Debug\BO.dll
+E:\Softtech\Meeting Project\Initial Phase\AppointmentFixturesProject\BLL\bin\Debug\DAL.dll
+E:\Softtech\Meeting Project\Initial Phase\AppointmentFixturesProject\BLL\bin\Debug\EntityFramework.dll
+E:\Softtech\Meeting Project\Initial Phase\AppointmentFixturesProject\BLL\bin\Debug\EntityFramework.SqlServer.dll
+E:\Softtech\Meeting Project\Initial Phase\AppointmentFixturesProject\BLL\bin\Debug\BO.pdb
+E:\Softtech\Meeting Project\Initial Phase\AppointmentFixturesProject\BLL\bin\Debug\DAL.pdb
+E:\Softtech\Meeting Project\Initial Phase\AppointmentFixturesProject\BLL\bin\Debug\EntityFramework.xml
+E:\Softtech\Meeting Project\Initial Phase\AppointmentFixturesProject\BLL\bin\Debug\EntityFramework.SqlServer.xml
+E:\Softtech\Meeting Project\Initial Phase\AppointmentFixturesProject\BLL\obj\Debug\BLL.csprojResolveAssemblyReference.cache
+E:\Softtech\Meeting Project\Initial Phase\AppointmentFixturesProject\BLL\obj\Debug\BLL.dll
+E:\Softtech\Meeting Project\Initial Phase\AppointmentFixturesProject\BLL\obj\Debug\BLL.pdb

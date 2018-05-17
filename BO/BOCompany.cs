@@ -28,6 +28,8 @@ namespace BO
 
         [Required]
         public string Description { get; set; }
+
+        [Required]
         public string Phone { get; set; }
         public string CreatedAt { get; set; }
         public string LastUpdated { get; set; }
