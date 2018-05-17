@@ -135,6 +135,7 @@
     <Property Name="CreatedAt" Type="nvarchar" MaxLength="50" />
     <Property Name="LastUpdated" Type="nvarchar" MaxLength="50" />
   </EntityType>
+<<<<<<< HEAD
   <EntityType Name="tblMeetingFirst">
     <Key>
       <PropertyRef Name="ID" />
@@ -146,6 +147,8 @@
     <Property Name="EndTime" Type="nvarchar" MaxLength="50" />
     <Property Name="Date" Type="date" />
   </EntityType>
+=======
+>>>>>>> bcc728bb558e224d7ad902b5f8d898ada0149495
   <EntityType Name="tblVIPUser">
     <Key>
       <PropertyRef Name="Id" />
@@ -294,7 +297,10 @@
     <EntitySet Name="tblCompanyDetails" EntityType="Self.tblCompanyDetails" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="tblDateTime" EntityType="Self.tblDateTime" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="tblDepartment" EntityType="Self.tblDepartment" Schema="dbo" store:Type="Tables" />
+<<<<<<< HEAD
     <EntitySet Name="tblMeetingFirst" EntityType="Self.tblMeetingFirst" Schema="dbo" store:Type="Tables" />
+=======
+>>>>>>> bcc728bb558e224d7ad902b5f8d898ada0149495
     <EntitySet Name="tblVIPUser" EntityType="Self.tblVIPUser" Schema="dbo" store:Type="Tables" />
     <AssociationSet Name="FK_dbo_AspNetUserClaims_dbo_AspNetUsers_UserId" Association="Self.FK_dbo_AspNetUserClaims_dbo_AspNetUsers_UserId">
       <End Role="AspNetUsers" EntitySet="AspNetUsers" />

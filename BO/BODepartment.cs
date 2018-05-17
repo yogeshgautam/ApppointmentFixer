@@ -14,9 +14,17 @@ namespace BO
        
         public Nullable<int> CompanyId { get; set; }
 
+
          [Required]
+
+        [Required]
+
         public string Name { get; set; }
+
+        [Required]
         public string phone { get; set; }
+
+
         public string Email { get; set; }
 
         [Required]

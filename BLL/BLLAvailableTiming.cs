@@ -101,7 +101,10 @@ namespace BLL
                 BOAvailableTiming available = new BOAvailableTiming();
                 available.Id = temp.Id;
                 available.StartTime = temp.StartTime;
+<<<<<<< HEAD
                 available.Date = temp.Date;
+=======
+>>>>>>> bcc728bb558e224d7ad902b5f8d898ada0149495
                 available.EndTime = temp.EndTime;
                 available.IsAvailable = temp.IsAvailable;
                 available.VipId = temp.VipId;

@@ -28,7 +28,11 @@ function loadData()
             $('.tbody').html(html);
         },
         error: function (errormessage) {
+<<<<<<< HEAD
             //alert(errormessage.response);
+=======
+            alert(errormessage.response);
+>>>>>>> bcc728bb558e224d7ad902b5f8d898ada0149495
         }
     });
 }
@@ -54,7 +58,11 @@ function getbyID(EmpID) {
             $('#btnAdd').hide();
         },
         error: function (errormessage) {
+<<<<<<< HEAD
             //alert(errormessage.responseText);
+=======
+            alert(errormessage.responseText);
+>>>>>>> bcc728bb558e224d7ad902b5f8d898ada0149495
         }
     });
     return false;
@@ -72,7 +80,11 @@ function Delete(ID) {
                 loadData();
             },
             error: function (errormessage) {
+<<<<<<< HEAD
                 //alert(errormessage.responseText);
+=======
+                alert(errormessage.responseText);
+>>>>>>> bcc728bb558e224d7ad902b5f8d898ada0149495
             }
         });
     }
@@ -91,7 +103,11 @@ function Add() {
             EndTime: $('#EndTime').val(),
             IsAvailable: $('#IsAvailable').val()
         };
+<<<<<<< HEAD
   
+=======
+    //debugger
+>>>>>>> bcc728bb558e224d7ad902b5f8d898ada0149495
     $.ajax({
         url: "/VIP/Add",
         data: JSON.stringify(empObj),
@@ -103,7 +119,11 @@ function Add() {
             $('#myModal').modal('hide');
         },
         error: function (errormessage) {
+<<<<<<< HEAD
             //alert(errormessage.responseText);
+=======
+            alert(errormessage.responseText);
+>>>>>>> bcc728bb558e224d7ad902b5f8d898ada0149495
         }
     });
 }
@@ -151,7 +171,11 @@ function Update() {
             $('#IsAvailable').val("");
         },
         error: function (errormessage) {
+<<<<<<< HEAD
            // alert(errormessage.responseText);
+=======
+            alert(errormessage.responseText);
+>>>>>>> bcc728bb558e224d7ad902b5f8d898ada0149495
         }
     });
 }

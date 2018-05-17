@@ -6,6 +6,7 @@
 
 <html>
 <head>
+<<<<<<< HEAD
     <meta name="viewport" content="width=device-width" />
     <title></title>
 
@@ -15,8 +16,19 @@
     <script src="~/Scripts/bootstrap.min.js"></script>
     @Scripts.Render("~/bundles/modernizr")
 
+=======
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - Appointment Scheduler</title>
+    @Styles.Render("~/Content/css")
+>>>>>>> bcc728bb558e224d7ad902b5f8d898ada0149495
 
+    @*<script src="https://code.jquery.com/jquery-1.12.4.js"></script>*@
+    <script src="~/Scripts/jquery-1.10.2.min.js"></script>
+    <script src="~/Scripts/bootstrap.min.js"></script>
+    @Scripts.Render("~/bundles/modernizr")
 
+<<<<<<< HEAD
     <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
     <script src="~/Scripts/jquery.unobtrusive-ajax.min.js"></script>
     <script src="~/Scripts/employee.js"></script>
@@ -73,6 +85,18 @@
             });
         }
     </script>
+=======
+    <!--for date picker-->
+    @*<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>*@
+    <!--end date time picker-->
+
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+    <script src="~/Scripts/jquery.unobtrusive-ajax.min.js"></script>
+    <script src="~/Scripts/employee.js"></script>
+    <script src="~/Scripts/AppointmentSetOrCancel.js"></script>
+>>>>>>> bcc728bb558e224d7ad902b5f8d898ada0149495
 </head>
 <a href="#">content</a>
 <body>
@@ -90,6 +114,11 @@
                 <ul class="nav navbar-nav">
                     <li>@Html.ActionLink("Home", "Index", "VIP")</li>
                     <li>@Html.ActionLink("Fix Appointment Timing", "FixAppointment", "VIP")</li>
+<<<<<<< HEAD
+=======
+                    <li>@Html.ActionLink("View Appointments Timing", "ViewAppointment", "VIP")</li>
+                    <li>@Html.ActionLink("Change Password", "ChangePassword", "VIP")</li>
+>>>>>>> bcc728bb558e224d7ad902b5f8d898ada0149495
                 </ul>
 
                 <ul class="nav navbar-nav navbar-right">
@@ -110,9 +139,10 @@
         <hr />
         <div class="navbar navbar-inverse navbar-fixed-bottom">
             <footer style="color:white">
-                <p>&copy; @DateTime.Now.Year - yogeshgautam</p>
+                <p>&copy; @DateTime.Now.Year - TeamPlus</p>
             </footer>
 
+<<<<<<< HEAD
         </div>
 
         <div class="modal fade" id="myModal" role="dialog">
@@ -140,5 +170,14 @@
         </div>
 
 
+=======
+        </div>
+        </div>
+
+        @*@Scripts.Render("~/bundles/jquery")
+            @Scripts.Render("~/bundles/bootstrap")*@
+
+        @RenderSection("scripts", required: false)
+>>>>>>> bcc728bb558e224d7ad902b5f8d898ada0149495
 </body>
 </html>

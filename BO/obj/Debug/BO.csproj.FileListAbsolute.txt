@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 C:\Users\Manish\Desktop\ApppointmentFixer\BO\bin\Debug\BO.dll.config
 C:\Users\Manish\Desktop\ApppointmentFixer\BO\bin\Debug\BO.dll
 C:\Users\Manish\Desktop\ApppointmentFixer\BO\bin\Debug\BO.pdb
@@ -29,3 +30,55 @@ E:\Softtech\Meeting Project\Initial Phase\AppointmentFixturesProject\BO\bin\Debu
 E:\Softtech\Meeting Project\Initial Phase\AppointmentFixturesProject\BO\obj\Debug\BO.csprojResolveAssemblyReference.cache
 E:\Softtech\Meeting Project\Initial Phase\AppointmentFixturesProject\BO\obj\Debug\BO.dll
 E:\Softtech\Meeting Project\Initial Phase\AppointmentFixturesProject\BO\obj\Debug\BO.pdb
+=======
+<<<<<<< HEAD
+=======
+D:\Users\yogesh\documents\visual studio 2013\Projects\AppointmentFixturesProject\BO\bin\Debug\BO.dll.config
+D:\Users\yogesh\documents\visual studio 2013\Projects\AppointmentFixturesProject\BO\bin\Debug\BO.dll
+D:\Users\yogesh\documents\visual studio 2013\Projects\AppointmentFixturesProject\BO\bin\Debug\BO.pdb
+D:\Users\yogesh\documents\visual studio 2013\Projects\AppointmentFixturesProject\BO\bin\Debug\EntityFramework.dll
+D:\Users\yogesh\documents\visual studio 2013\Projects\AppointmentFixturesProject\BO\bin\Debug\EntityFramework.SqlServer.dll
+D:\Users\yogesh\documents\visual studio 2013\Projects\AppointmentFixturesProject\BO\bin\Debug\EntityFramework.xml
+D:\Users\yogesh\documents\visual studio 2013\Projects\AppointmentFixturesProject\BO\bin\Debug\EntityFramework.SqlServer.xml
+D:\Users\yogesh\documents\visual studio 2013\Projects\AppointmentFixturesProject\BO\obj\Debug\BO.csprojResolveAssemblyReference.cache
+D:\Users\yogesh\documents\visual studio 2013\Projects\AppointmentFixturesProject\BO\obj\Debug\BO.dll
+D:\Users\yogesh\documents\visual studio 2013\Projects\AppointmentFixturesProject\BO\obj\Debug\BO.pdb
+<<<<<<< HEAD
+>>>>>>> bcc728bb558e224d7ad902b5f8d898ada0149495
+C:\Users\Manish\Desktop\ApppointmentFixer\BO\bin\Debug\BO.dll.config
+C:\Users\Manish\Desktop\ApppointmentFixer\BO\bin\Debug\BO.dll
+C:\Users\Manish\Desktop\ApppointmentFixer\BO\bin\Debug\BO.pdb
+C:\Users\Manish\Desktop\ApppointmentFixer\BO\bin\Debug\EntityFramework.dll
+C:\Users\Manish\Desktop\ApppointmentFixer\BO\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Manish\Desktop\ApppointmentFixer\BO\bin\Debug\EntityFramework.xml
+C:\Users\Manish\Desktop\ApppointmentFixer\BO\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Manish\Desktop\ApppointmentFixer\BO\obj\Debug\BO.csprojResolveAssemblyReference.cache
+C:\Users\Manish\Desktop\ApppointmentFixer\BO\obj\Debug\BO.csproj.CoreCompileInputs.cache
+C:\Users\Manish\Desktop\ApppointmentFixer\BO\obj\Debug\BO.dll
+C:\Users\Manish\Desktop\ApppointmentFixer\BO\obj\Debug\BO.pdb
+<<<<<<< HEAD
+D:\Users\yogesh\documents\visual studio 2013\Projects\AppointmentFixturesProject\BO\bin\Debug\BO.dll.config
+D:\Users\yogesh\documents\visual studio 2013\Projects\AppointmentFixturesProject\BO\bin\Debug\BO.dll
+D:\Users\yogesh\documents\visual studio 2013\Projects\AppointmentFixturesProject\BO\bin\Debug\BO.pdb
+D:\Users\yogesh\documents\visual studio 2013\Projects\AppointmentFixturesProject\BO\bin\Debug\EntityFramework.dll
+D:\Users\yogesh\documents\visual studio 2013\Projects\AppointmentFixturesProject\BO\bin\Debug\EntityFramework.SqlServer.dll
+D:\Users\yogesh\documents\visual studio 2013\Projects\AppointmentFixturesProject\BO\bin\Debug\EntityFramework.xml
+D:\Users\yogesh\documents\visual studio 2013\Projects\AppointmentFixturesProject\BO\bin\Debug\EntityFramework.SqlServer.xml
+D:\Users\yogesh\documents\visual studio 2013\Projects\AppointmentFixturesProject\BO\obj\Debug\BO.dll
+D:\Users\yogesh\documents\visual studio 2013\Projects\AppointmentFixturesProject\BO\obj\Debug\BO.pdb
+D:\Users\yogesh\documents\visual studio 2013\Projects\AppointmentFixturesProject\BO\obj\Debug\BO.csprojResolveAssemblyReference.cache
+=======
+=======
+J:\M\Final Appointment Project\FInal Appointment Proooojet\ApppointmentFixer\BO\bin\Debug\BO.dll.config
+J:\M\Final Appointment Project\FInal Appointment Proooojet\ApppointmentFixer\BO\bin\Debug\BO.dll
+J:\M\Final Appointment Project\FInal Appointment Proooojet\ApppointmentFixer\BO\bin\Debug\BO.pdb
+J:\M\Final Appointment Project\FInal Appointment Proooojet\ApppointmentFixer\BO\bin\Debug\EntityFramework.dll
+J:\M\Final Appointment Project\FInal Appointment Proooojet\ApppointmentFixer\BO\bin\Debug\EntityFramework.SqlServer.dll
+J:\M\Final Appointment Project\FInal Appointment Proooojet\ApppointmentFixer\BO\bin\Debug\EntityFramework.xml
+J:\M\Final Appointment Project\FInal Appointment Proooojet\ApppointmentFixer\BO\bin\Debug\EntityFramework.SqlServer.xml
+J:\M\Final Appointment Project\FInal Appointment Proooojet\ApppointmentFixer\BO\obj\Debug\BO.csprojResolveAssemblyReference.cache
+J:\M\Final Appointment Project\FInal Appointment Proooojet\ApppointmentFixer\BO\obj\Debug\BO.dll
+J:\M\Final Appointment Project\FInal Appointment Proooojet\ApppointmentFixer\BO\obj\Debug\BO.pdb
+>>>>>>> diwasDevelopment
+>>>>>>> bcc728bb558e224d7ad902b5f8d898ada0149495
+>>>>>>> f56b9ffbdf8c6804509719b4d0e152cacc57b353
